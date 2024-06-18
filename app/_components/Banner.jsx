@@ -6,7 +6,7 @@ const Banner = () => {
       <div className="bg-black/25 p-8 md:p-12 lg:px-16 lg:py-24">
         <div className="text-center ">
           <h2 className="text-2xl font-bold text-white sm:text-3xl md:text-5xl">
-            Latest Shirts
+            Latest Properties
           </h2>
 
           <p className="hidden max-w-lg text-white/90 md:mt-6 md:block md:text-lg md:leading-relaxed">

@@ -1,4 +1,3 @@
-import React from "react";
 import servicesData from "../../public/_mocks/services.json";
 
 const Page = () => {

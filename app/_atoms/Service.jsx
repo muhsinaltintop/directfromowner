@@ -15,7 +15,7 @@ const Service = ({ title, detail }) => {
         />
 
         <Image
-          src="/house.jpg"
+          src="/cover.png"
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
           width="200"

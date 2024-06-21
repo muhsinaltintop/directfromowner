@@ -1,8 +1,8 @@
 const page = () => {
   return (
     <section className="bg-fifth text-primary">
-      <div className="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4">
-        <div className="mt-8">
+      <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
+        <div className="max-w-xl">
           <h2 className="text-3xl font-bold sm:text-4xl">About Us</h2>
 
           <p className="mt-4 text-gray-300">
@@ -15,7 +15,7 @@ const page = () => {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
           <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-gray-800 p-4">
               <svg
@@ -85,12 +85,12 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4">
+      <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="max-w-xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">Our Services</h2>
+          <h2 className="text-3xl font-bold sm:text-4xl">Our Services</h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
           <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-gray-800 p-4">
               <svg
@@ -189,12 +189,12 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4">
+      <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="max-w-xl">
-          <h2 className="text-2xl font-bold sm:text-3xl">Why Choose Us</h2>
+          <h2 className="text-3xl font-bold sm:text-4xl">Why Choose Us</h2>
         </div>
 
-        <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <div className="mt-8 grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
           <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-gray-800 p-4">
               <svg
@@ -286,12 +286,12 @@ const page = () => {
           </div>
         </div>
       </div>
-      <div className="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4">
+      <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         <div className="max-w-xl">
           <h2 className="text-2xl font-bold sm:text-3xl">Contact Us</h2>
         </div>
 
-        <div className="mt-4 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <div className="mt-8  gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
           <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-gray-800 p-4">
               <svg

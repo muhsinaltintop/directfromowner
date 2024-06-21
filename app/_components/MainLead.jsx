@@ -29,7 +29,7 @@ const MainLead = () => {
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="#"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
+              <span className="inline-block rounded-lg bg-primary p-3">
                 <svg
                   aria-hidden="true"
                   focusable="false"
@@ -54,7 +54,7 @@ const MainLead = () => {
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="#"
             >
-              <span className="inline-block rounded-lg bg-gray-50 p-3">
+              <span className="inline-block rounded-lg bg-primary p-3">
                 <svg
                   aria-hidden="true"
                   focusable="false"

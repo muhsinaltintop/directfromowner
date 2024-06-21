@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
 const Property = () => {
   return (
-    <a href="#" className="group relative block overflow-hidden">
+    <Link href="#" className="group relative block overflow-hidden">
       <button className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
         <span className="sr-only">Wishlist</span>
 
@@ -24,7 +25,7 @@ const Property = () => {
       </button>
 
       <Image
-        src="/house-1.jpg"
+        src="/house-1/main.png"
         alt=""
         className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
         height="350"
@@ -33,7 +34,10 @@ const Property = () => {
 
       <div className="relative border border-gray-100 bg-white p-6">
         <span className="whitespace-nowrap bg-fifth px-3 py-1.5 text-xs font-medium text-primary">
-          New
+          Ready
+        </span>
+        <span className="whitespace-nowrap bg-primary px-3 py-1.5 text-xs font-medium text-fifth ml-4">
+          London
         </span>
 
         <h3 className="mt-4 text-lg font-medium text-gray-900">
@@ -48,7 +52,7 @@ const Property = () => {
           </button>
         </form>
       </div>
-    </a>
+    </Link>
   );
 };
 

@@ -1,34 +1,19 @@
-import React from "react";
-import Service from "../_atoms/Service";
+import Service from "../_atoms/Service"; // Service
+import mainServices from "../../public/_mocks/main_services_eng"; // JSON dosyanızın yolu ve adı
 
 const Services = () => {
   return (
-    <div className="flex justify-around">
-      <div className="w-2/12">
-        <Service
-          title="Property Management"
-          detail="Maximise your rental income with our expert property management services."
-        />
+    <section>
+      <div className="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 sm:py-6 lg:px-4">
+        <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+          {mainServices.map((item, index) => (
+            <li key={index}>
+              <Service title={item.title} detail={item.detail} />
+            </li>
+          ))}
+        </ul>
       </div>
-      <div className="w-2/12">
-        <Service
-          title="Sales Services"
-          detail="Find your dream property with our dedicated sales team."
-        />
-      </div>
-      <div className="w-2/12">
-        <Service
-          title="Consultancy Services"
-          detail="Make profitable investment decisions with our expert consultancy services."
-        />
-      </div>
-      <div className="w-2/12">
-        <Service
-          title="Renovation Projects"
-          detail="Transform properties into valuable assets with our renovation expertise."
-        />
-      </div>
-    </div>
+    </section>
   );
 };
 

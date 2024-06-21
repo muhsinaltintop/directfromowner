@@ -8,7 +8,7 @@ const Header = () => {
       <div className="text-primary mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <Link className="block text-primary" href="#">
+            <Link className="block text-primary" href="/">
               <span className="sr-only">Home</span>
               <Image
                 src={"/globalbordo.png"}
@@ -25,7 +25,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="text-primary font-bold transition hover:text-gray-500/75"
-                    href="#"
+                    href="/aboutus"
                   >
                     About
                   </Link>
@@ -33,26 +33,8 @@ const Header = () => {
 
                 <li>
                   <Link
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
-                  >
-                    Careers
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
-                  >
-                    History
-                  </Link>
-                </li>
-
-                <li>
-                  <Link
-                    className="text-gray-500 transition hover:text-gray-500/75"
-                    href="#"
+                    className="text-primary transition hover:text-gray-500/75"
+                    href="/ourservices"
                   >
                     Services
                   </Link>
@@ -60,25 +42,34 @@ const Header = () => {
 
                 <li>
                   <Link
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-primary transition hover:text-gray-500/75"
                     href="#"
                   >
-                    Projects
+                    Proporties
                   </Link>
                 </li>
 
                 <li>
                   <Link
-                    className="text-gray-500 transition hover:text-gray-500/75"
+                    className="text-primary transition hover:text-gray-500/75"
                     href="#"
                   >
-                    Blog
+                    Blog&News
+                  </Link>
+                </li>
+
+                <li>
+                  <Link
+                    className="text-primary transition hover:text-gray-500/75"
+                    href="#"
+                  >
+                    Contact
                   </Link>
                 </li>
               </ul>
             </nav>
 
-            <div className="flex items-center gap-4">
+            {/* <div className="flex items-center gap-4">
               <div className="sm:flex sm:gap-4">
                 <Link
                   className="rounded-md bg-teal-600 px-5 py-2.5 text-sm font-medium text-white shadow"
@@ -115,7 +106,7 @@ const Header = () => {
                   </svg>
                 </button>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

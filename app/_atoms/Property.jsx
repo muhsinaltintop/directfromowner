@@ -32,7 +32,7 @@ const Property = () => {
       />
 
       <div className="relative border border-gray-100 bg-white p-6">
-        <span className="whitespace-nowrap bg-yellow-400 px-3 py-1.5 text-xs font-medium">
+        <span className="whitespace-nowrap bg-fifth px-3 py-1.5 text-xs font-medium text-primary">
           New
         </span>
 
@@ -43,7 +43,7 @@ const Property = () => {
         <p className="mt-1.5 text-sm text-gray-700">£240.000</p>
 
         <form className="mt-4">
-          <button className="block w-full rounded bg-yellow-400 p-4 text-sm font-medium transition hover:scale-105">
+          <button className="block w-full rounded bg-fifth p-4 text-sm font-medium transition hover:scale-105 text-primary">
             Details
           </button>
         </form>

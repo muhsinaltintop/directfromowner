@@ -8,17 +8,17 @@ const MainLead = () => {
         <div className="grid grid-cols-1 gap-y-8 lg:grid-cols-2 lg:items-center lg:gap-x-16">
           <div className="mx-auto max-w-lg text-center lg:mx-0 ">
             <h2 className="text-3xl font-bold sm:text-4xl">
-              Contact to Invest and Valuaiton
+              Contact to Invest
             </h2>
 
             <p className="mt-4 text-gray-600">
-              Contact us for valuation of your properties and listing on our
-              webpage.
+              Contact us for property investment. Reach out to list your
+              properties on our webpage.
             </p>
 
             <Link
               href="#"
-              className="mt-8 inline-block rounded bg-indigo-600 px-12 py-3 text-sm font-medium text-white transition hover:bg-indigo-700 focus:outline-none focus:ring focus:ring-yellow-400"
+              className="mt-8 inline-block rounded bg-fifth px-12 py-3 text-sm font-medium text-primary shadow hover:bg-primary hover:text-fifth ocus:outline-none focus:ring active:bg-third active:text-fifth sm:w-auto"
             >
               Contact
             </Link>
@@ -46,7 +46,7 @@ const MainLead = () => {
               <h2 className="mt-2 font-bold">Call Us</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+                Call us to discuss your property investment needs.
               </p>
             </Link>
 
@@ -71,7 +71,7 @@ const MainLead = () => {
               <h2 className="mt-2 font-bold">Email Us</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+                Email us for detailed property consultation.
               </p>
             </Link>
 
@@ -96,7 +96,7 @@ const MainLead = () => {
               <h2 className="mt-2 font-bold">Fill the Form</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
-                Lorem ipsum dolor sit amet consectetur.
+                Fill out the form for property investment.
               </p>
             </Link>
           </div>

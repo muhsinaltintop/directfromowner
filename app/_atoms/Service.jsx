@@ -1,9 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
 
-const Service = ({ title }) => {
+const Service = ({ title, detail }) => {
   return (
-    <a href="#" className="group relative block">
+    <Link href="#" className="group relative block">
       <div className="relative h-[350px] sm:h-[450px]">
         <Image
           src="/house.jpg"
@@ -22,19 +23,18 @@ const Service = ({ title }) => {
         />
       </div>
 
-      <div className="absolute inset-0 flex flex-col items-start justify-end p-6">
-        <h3 className="text-xl font-medium text-white">{title}</h3>
+      <div className="absolute inset-0 flex flex-col items-start justify-end">
+        <div className="bg-fifth p-6">
+          <h3 className="text-xl font-medium text-primary">{title}</h3>
 
-        <p className="mt-1.5 text-pretty text-xs text-white">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-          sequi dicta impedit aperiam ipsum!
-        </p>
+          <p className="mt-1.5 text-pretty text-xs text-primary">{detail}</p>
 
-        <span className="mt-3 inline-block bg-black px-5 py-3 text-xs font-medium uppercase tracking-wide text-white">
-          Details
-        </span>
+          <span className="mt-3 inline-block bg-primary  text-xs font-medium uppercase tracking-wide text-fifth p-3">
+            Details
+          </span>
+        </div>
       </div>
-    </a>
+    </Link>
   );
 };
 

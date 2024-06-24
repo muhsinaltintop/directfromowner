@@ -8,10 +8,10 @@ const Header = () => {
       <div className="text-primary mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <Link className="block text-primary" href="/">
+            <Link className="block text-primary text-lg" href="/">
               <span className="sr-only">Home</span>
               <Image
-                src={"/globalbordo.png"}
+                src={"/logo-yatay.png"}
                 width="200"
                 height="200"
                 alt="logo"
@@ -24,7 +24,7 @@ const Header = () => {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <Link
-                    className="text-primary font-bold transition hover:text-gray-500/75"
+                    className="text-primary text-lg font-bold transition hover:text-gray-500/75"
                     href="/aboutus"
                   >
                     About
@@ -33,7 +33,7 @@ const Header = () => {
 
                 <li>
                   <Link
-                    className="text-primary transition hover:text-gray-500/75"
+                    className="text-primary text-lg transition hover:text-gray-500/75"
                     href="/ourservices"
                   >
                     Services
@@ -42,7 +42,7 @@ const Header = () => {
 
                 <li>
                   <Link
-                    className="text-primary transition hover:text-gray-500/75"
+                    className="text-primary text-lg transition hover:text-gray-500/75"
                     href="#"
                   >
                     Proporties
@@ -51,7 +51,7 @@ const Header = () => {
 
                 <li>
                   <Link
-                    className="text-primary transition hover:text-gray-500/75"
+                    className="text-primary text-lg transition hover:text-gray-500/75"
                     href="#"
                   >
                     Blog&News

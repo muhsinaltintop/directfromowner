@@ -18,7 +18,7 @@ const MainLead = () => {
 
             <Link
               href="#"
-              className="mt-8 inline-block rounded bg-fifth px-12 py-3 text-sm font-medium text-primary shadow hover:bg-primary hover:text-fifth ocus:outline-none focus:ring active:bg-third active:text-fifth sm:w-auto"
+              className="mt-8 inline-block rounded bg-fifth px-8 py-2 text-xl font-medium text-primary shadow hover:bg-primary hover:text-fifth ocus:outline-none focus:ring active:bg-third active:text-fifth sm:w-auto"
             >
               Contact
             </Link>
@@ -43,7 +43,7 @@ const MainLead = () => {
                 </svg>
               </span>
 
-              <h2 className="mt-2 font-bold">Call Us</h2>
+              <h2 className="mt-2 font-bold text-xl">Call Us</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Call us to discuss your property investment needs.
@@ -68,7 +68,7 @@ const MainLead = () => {
                 </svg>
               </span>
 
-              <h2 className="mt-2 font-bold">Email Us</h2>
+              <h2 className="mt-2 font-bold text-xl">Email Us</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Email us for detailed property consultation.
@@ -94,7 +94,7 @@ const MainLead = () => {
                 </svg>
               </span>
 
-              <h2 className="mt-2 font-bold">Fill the Form</h2>
+              <h2 className="mt-2 font-bold text-xl">Fill the Form</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Fill out the form for property investment.

@@ -18,7 +18,7 @@ const Service = ({ title, detail }) => {
     .join("");
   return (
     <Link
-      href={`/ourservices/#${servicePath}`}
+      href={`/our-services/#${servicePath}`}
       className="group relative block"
     >
       <div className="relative h-[350px] sm:h-[450px]">

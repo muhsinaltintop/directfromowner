@@ -43,7 +43,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="text-primary text-lg transition hover:text-gray-500/75"
-                    href="#"
+                    href="/properties"
                   >
                     Proporties
                   </Link>

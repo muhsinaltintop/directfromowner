@@ -268,21 +268,13 @@ const Footer = () => {
           <p className="text-center text-xs/relaxed text-gray-500">
             © Company 2022. All rights reserved.
             <br />
-            Created with
+            Designed by
             <a
               href="#"
               className="text-gray-700 underline transition hover:text-gray-700/75"
             >
-              Laravel
+              Odycodigital
             </a>
-            and
-            <a
-              href="#"
-              className="text-gray-700 underline transition hover:text-gray-700/75"
-            >
-              Laravel Livewire
-            </a>
-            .
           </p>
         </div>
       </div>

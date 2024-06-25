@@ -3,8 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const Service = ({ title, detail }) => {
-  let link = title.toLowerCase().replace(/ /g, "-");
-  let imagePath = title
+  let servicePath = title
     .toLowerCase() // Convert the entire string to lowercase
     .split(" ") // Split the string by spaces into an array of words
     .map((word, index) => {
@@ -18,10 +17,13 @@ const Service = ({ title, detail }) => {
     })
     .join("");
   return (
-    <Link href={`properties/${link}`} className="group relative block">
+    <Link
+      href={`/ourservices/#${servicePath}`}
+      className="group relative block"
+    >
       <div className="relative h-[350px] sm:h-[450px]">
         <Image
-          src={`/${imagePath}.png`}
+          src={`/${servicePath}.png`}
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-100 group-hover:opacity-0"
           width="200"
@@ -29,9 +31,9 @@ const Service = ({ title, detail }) => {
         />
 
         <Image
-          src="/cover.png"
+          src={`/${servicePath}.png`}
           alt=""
-          className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100"
+          className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100 inset-y-0"
           width="200"
           height="200"
         />

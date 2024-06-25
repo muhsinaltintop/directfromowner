@@ -24,7 +24,7 @@ const Header = () => {
               <ul className="flex items-center gap-6 text-sm">
                 <li>
                   <Link
-                    className="text-primary text-lg font-bold transition hover:text-gray-500/75"
+                    className="text-primary text-lg  transition hover:text-gray-500/75"
                     href="/aboutus"
                   >
                     About
@@ -34,7 +34,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="text-primary text-lg transition hover:text-gray-500/75"
-                    href="/ourservices"
+                    href="/our-services"
                   >
                     Services
                   </Link>
@@ -60,7 +60,7 @@ const Header = () => {
 
                 <li>
                   <Link
-                    className="text-primary transition hover:text-gray-500/75"
+                    className="text-primary text-lg transition hover:text-gray-500/75"
                     href="#"
                   >
                     Contact

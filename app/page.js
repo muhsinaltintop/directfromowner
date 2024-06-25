@@ -4,6 +4,7 @@ import Banner from "./_components/Banner";
 import MainLead from "./_components/MainLead";
 import Services from "./_components/Services";
 import Properties from "./_components/Properties";
+import Contact from "./_components/Contact";
 
 export default function Home() {
   return (
@@ -20,6 +21,9 @@ export default function Home() {
       </div>
       <div>
         <Properties />
+      </div>
+      <div>
+        <Contact/>
       </div>
     </main>
   );

@@ -8,7 +8,7 @@ const BlogDetails = async ({ params }) => {
   if (!blogPost) {
     return (
       <div className="flex justify-center items-center h-screen">
-        <h1 className="text-2xl font-bold">Blog girdisi bulunamadı</h1>
+        <h1 className="text-2xl font-bold">Blog entry not found</h1>
       </div>
     );
   }

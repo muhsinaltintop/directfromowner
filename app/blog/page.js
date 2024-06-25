@@ -1,5 +1,6 @@
 import Link from "next/link";
-import data from '../../public/_mocks/blogs.json';
+import data from "../../public/_mocks/blogs.json";
+import Image from "next/image";
 
 const Blog = async () => {
   return (
@@ -10,7 +11,14 @@ const Blog = async () => {
             key={index}
             className="flex flex-wrap overflow-hidden rounded-lg shadow transition hover:shadow-lg p-8 justify-center items-center w-96 h-122 mx-auto"
           >
-          <Link href={`/blog/${post.id}`}>
+            <Image
+              src="/blue-house.jpg"
+              alt="/blue-house.jpg"
+              width={270}
+              height={100}
+              className="rounded-t-lg"
+            />
+            <Link href={`/blog/${post.id}`}>
               <h3 className="mt-0.5 text-base md:text-lg text-gray-900">
                 {post?.subtitle}
               </h3>

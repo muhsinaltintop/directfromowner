@@ -4,7 +4,10 @@ import React from "react";
 
 const Property = () => {
   return (
-    <Link href="#" className="group relative block overflow-hidden">
+    <Link
+      href="/properties/demo-property"
+      className="group relative block overflow-hidden"
+    >
       <button className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
         <span className="sr-only">Wishlist</span>
 

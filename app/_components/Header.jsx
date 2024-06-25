@@ -45,7 +45,7 @@ const Header = () => {
                     className="text-primary text-lg transition hover:text-gray-500/75"
                     href="/properties"
                   >
-                    Proporties
+                    Properties
                   </Link>
                 </li>
 
@@ -61,7 +61,7 @@ const Header = () => {
                 <li>
                   <Link
                     className="text-primary text-lg transition hover:text-gray-500/75"
-                    href="#"
+                    href="/contact"
                   >
                     Contact
                   </Link>

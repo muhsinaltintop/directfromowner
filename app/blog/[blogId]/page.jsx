@@ -14,7 +14,7 @@ const BlogDetails = async ({ params }) => {
     );
   }
 
-  const { subtitle, text } = blogPost;
+  const { title, text } = blogPost;
 
   return (
     <div className="flex justify-center items-center min-h-screen p-4">
@@ -27,7 +27,7 @@ const BlogDetails = async ({ params }) => {
             height={100}
             className="rounded-t-lg m-4"
           />
-          <h1 className="text-3xl font-bold text-gray-900 mb-4">{subtitle}</h1>
+          <h1 className="text-3xl font-bold text-gray-900 mb-4">{title}</h1>
           <p className="text-lg text-gray-700 leading-relaxed">{text}</p>
         </div>
       </div>

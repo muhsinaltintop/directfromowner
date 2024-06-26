@@ -1,10 +1,10 @@
-import Image from "next/image";
 import Slider from "./_components/Slider";
 import Banner from "./_components/Banner";
 import MainLead from "./_components/MainLead";
 import Services from "./_components/Services";
 import Properties from "./_components/Properties";
 import Contact from "./_components/Contact";
+import Blog from "./blog/page";
 
 export default function Home() {
   return (
@@ -24,6 +24,9 @@ export default function Home() {
       </div>
       <div>
         <Contact/>
+      </div>
+      <div>
+        <Blog />
       </div>
     </main>
   );

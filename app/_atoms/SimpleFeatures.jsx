@@ -17,7 +17,7 @@ const SimpleFeatures = () => {
         <div>
           <div className="flex justify-between mt-4 text-cyan-950">
             <div>
-              <h1>Main Road, Harwich, CW1 4QJ</h1>
+              <h1>Main Road, Harwich, CO12</h1>
             </div>
             <div className="flex">
               <button
@@ -31,7 +31,7 @@ const SimpleFeatures = () => {
           <div className="flex justify-between mt-4 text-cyan-950">
             <div>
               <h3>
-                <span className="font-bold">£35,000</span>
+                <span className="font-bold">£350,000</span>
               </h3>
             </div>
             <div>
@@ -47,9 +47,9 @@ const SimpleFeatures = () => {
             </span>
 
             <div>
-              <h2 className="text-lg font-bold">Project Type</h2>
+              <h2 className="text-lg font-bold">Property Type</h2>
 
-              <p className="mt-1 text-sm text-black">Investment</p>
+              <p className="mt-1 text-sm text-black">Semi-Detached</p>
             </div>
           </div>
 
@@ -61,7 +61,7 @@ const SimpleFeatures = () => {
             <div>
               <h2 className="text-lg font-bold">Constrution Year</h2>
 
-              <p className="mt-1 text-sm text-black">2018</p>
+              <p className="mt-1 text-sm text-black">2024</p>
             </div>
           </div>
 
@@ -85,7 +85,7 @@ const SimpleFeatures = () => {
             <div>
               <h2 className="text-lg font-bold">Number of Bedroom</h2>
 
-              <p className="mt-1 text-sm text-black">3</p>
+              <p className="mt-1 text-sm text-black">4</p>
             </div>
           </div>
 
@@ -109,7 +109,7 @@ const SimpleFeatures = () => {
             <div>
               <h2 className="text-lg font-bold">Garage</h2>
 
-              <p className="mt-1 text-sm text-black">1</p>
+              <p className="mt-1 text-sm text-black">0</p>
             </div>
           </div>
         </div>

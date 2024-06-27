@@ -6,7 +6,6 @@ import Properties from "./_components/Properties";
 import Contact from "./_components/Contact";
 import Blog from "./blog/page";
 
-
 export default function Home() {
   return (
     <main className="w-full">
@@ -22,9 +21,6 @@ export default function Home() {
       </div>
       <div>
         <Properties />
-      </div>
-      <div>
-        <Contact/>
       </div>
       <div>
         <Blog />

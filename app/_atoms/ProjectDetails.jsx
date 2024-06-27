@@ -31,37 +31,31 @@ const ProjectDetails = () => {
         <div className="my-5 ">
           <h3 className="my-4   text-lg font-bold">Description</h3>
           <p>
-            Lorem Square, located between Lorem City Center and LoremMediaCity,
-            is a stunning riverside residential project comprising 500 luxury
-            apartments. The two residential buildings in the project are
-            situated around a beautifully arranged square designed to promote
-            wellness and an enriching living experience. Lorem Square stands out
-            as an ideal, safe option for professionals, families, and first-time
-            homebuyers.
+            LAST PLOT REMAINING Absolutely outstanding Energy efficient homes.
+            These wonderful semi detached homes offer amazing space and spacious
+            south facing gardens whilst being constructed to offer A rated
+            energy certificates which some lenders will offer discounted
+            interest rates on. Highlights include four first floor bedrooms,
+            en-suite to master, family bathroom. Downstairs there is an entrance
+            hall, cloakroom, living room, kitchen/diner and utility room.
+            Outside the generous gardens and two parking spaces, call for
+            further details.
           </p>
           <ul className="space-y-4 mt-4  ">
             <li>
-              Luxury residential project with 500 apartments in Lorem City
+              <h1 className="font-bold text-2xl">Ground Floor</h1>
             </li>
             <li>
-              A luxurious project spread over 2.8 acres with direct river
-              frontage
+              <h2 className="font-bold text-xl">Details 1</h2>
             </li>
+            <li>Entrance Hall</li>
+            <li>With stairs to first floor and doors to.</li>
+            <li>Ground Floor WC</li>
+            <li>Close coupled WC and wash hand basin.</li>
+            <li>Living Room</li>
             <li>
-              Located equidistantly between Lorem City Center and
-              LoremMediaCity/Salford Quays, in the citys most popular location
-            </li>
-            <li>
-              The area in front of the project will undergo a billion-pound
-              transformation process over the next decade
-            </li>
-            <li>
-              A wide square with extensive gardens, various social spaces, and
-              relaxation areas
-            </li>
-            <li>Private balconies and outdoor spaces for most apartments</li>
-            <li>
-              Hotel-style concierge, gym, co-working space, rooftop gardens
+              12' 10" x 12' 5" (3.91m x 3.78m) Window to front, radiator, fitted
+              storage cupboard.
             </li>
           </ul>
         </div>

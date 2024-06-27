@@ -4,12 +4,13 @@ import React from "react";
 
 const Header = () => {
   return (
-    <header className="bg-fifth">
+    <header className="bg-fifth py-2">
       <div className="text-primary mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
           <div className="flex-1 md:flex md:items-center md:gap-12">
-            <Link className="block text-primary text-lg" href="/">
+            <Link className="block text-primary text-lg " href="/">
               <span className="sr-only">Home</span>
+
               <Image
                 src={"/logo-yatay.png"}
                 width="200"

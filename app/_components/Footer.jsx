@@ -148,7 +148,7 @@ const Footer = () => {
 
           <div className="grid grid-cols-1 gap-8 text-center lg:grid-cols-3 lg:text-left">
             <div>
-              <strong className="font-medium text-gray-900"> About </strong>
+              <strong className="font-medium text-gray-900"> Pages </strong>
 
               <ul className="mt-6 space-y-1">
                 <li>
@@ -163,27 +163,35 @@ const Footer = () => {
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/aboutus#our-services"
+                    href="/our-services"
                   >
-                    Or Services
+                    Services
                   </a>
                 </li>
 
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/aboutus#whyChooseUs"
+                    href="/properties"
                   >
-                    Why Choose Us?
+                    Properties
                   </a>
                 </li>
 
                 <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/aboutus#contactUs"
+                    href="/blog"
                   >
-                    Contact Us
+                    Blog&News
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="text-gray-700 transition hover:text-gray-700/75"
+                    href="/contact"
+                  >
+                    Contact
                   </a>
                 </li>
               </ul>
@@ -242,7 +250,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                {/* <li>
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="#"
@@ -258,7 +266,7 @@ const Footer = () => {
                   >
                     Live Chat
                   </a>
-                </li>
+                </li> */}
               </ul>
             </div>
           </div>

@@ -12,7 +12,7 @@ const toCamelCase = (str) => {
 
 const Page = () => {
   return (
-    <section className="bg-fifth text-primary">
+    <section className="bg-primary text-fifth">
       <div className="max-w-screen-xl mx-auto px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16">
         {servicesData?.services?.map((service, index) => {
           const hashTag = toCamelCase(service.title);
@@ -21,8 +21,8 @@ const Page = () => {
               <h3 className="text-2xl font-bold sm:text-3xl">
                 {service.title}
               </h3>
-              <p className="mt-4 text-gray-300">{service.spot}</p>
-              <p className="mt-8 text-gray-300">{service.opening}</p>
+              <p className="mt-4 text-gray-900">{service.spot}</p>
+              <p className="mt-8 text-gray-900">{service.opening}</p>
 
               <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
                 {service.services.map((subService, subIndex) => (
@@ -50,7 +50,7 @@ const Page = () => {
                       <h2 className="text-lg font-bold">
                         {subService.subtitle}
                       </h2>
-                      <p className="mt-1 text-sm text-gray-300">
+                      <p className="mt-1 text-sm text-gray-900">
                         {subService.text}
                       </p>
                     </div>
@@ -60,7 +60,7 @@ const Page = () => {
 
               {service.benefits && service.benefits.length > 0 && (
                 <>
-                  <p className="mt-8 text-gray-300">Benefits:</p>
+                  <p className="mt-8 text-fifth">Benefits:</p>
                   <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
                     {service.benefits.map((benefit, benIndex) => (
                       <div key={benIndex} className="flex items-start gap-4">
@@ -87,7 +87,7 @@ const Page = () => {
                           <h2 className="text-lg font-bold">
                             {benefit.subtitle}
                           </h2>
-                          <p className="mt-1 text-sm text-gray-300">
+                          <p className="mt-1 text-sm text-gray-900">
                             {benefit.text}
                           </p>
                         </div>
@@ -97,7 +97,7 @@ const Page = () => {
                 </>
               )}
 
-              <p className="mt-8 text-gray-300">{service.closing}</p>
+              <p className="mt-8 text-gray-900">{service.closing}</p>
             </div>
           );
         })}

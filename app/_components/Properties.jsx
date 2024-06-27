@@ -7,11 +7,12 @@ const Properties = () => {
       <div className="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 sm:py-6 lg:px-4">
         <header>
           <h2 className="text-xl font-bold text-gray-900 sm:text-3xl">
-            Property Collection
+            Property Portfolio
           </h2>
 
           <p className="mt-4 max-w-md text-gray-500">
-            We have great range of property collection.
+            Let's select the most profitable and suitable investment for you
+            from our portfolio.
           </p>
         </header>
 
@@ -228,18 +229,6 @@ const Properties = () => {
         </div>
 
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          <li>
-            <Property />
-          </li>
-
-          <li>
-            <Property />
-          </li>
-
-          <li>
-            <Property />
-          </li>
-
           <li>
             <Property />
           </li>

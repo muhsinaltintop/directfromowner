@@ -7,7 +7,6 @@ import SimpleFeatures from "../_atoms/SimpleFeatures";
 const SingleProperty = ({ title }) => {
   return (
     <div className="pb-5">
-      <h1 className="text-xl">{title}</h1>
       <ImageSlider />
       <SimpleFeatures />
       <ProjectDetails />

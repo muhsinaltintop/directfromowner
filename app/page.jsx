@@ -13,14 +13,14 @@ export default function Home() {
       <div className="w-9/12 my-4 items-center mx-auto">
         <Banner />
       </div>
-      <div className="w-9/12 my-4 items-center mx-auto">
-        <MainLead />
-      </div>
       <div className="w-12/12 mx-40">
         <Services />
       </div>
       <div>
         <Properties />
+      </div>
+      <div className="w-9/12 my-4 items-center mx-auto">
+        <MainLead />
       </div>
       <div>
         <Blog />

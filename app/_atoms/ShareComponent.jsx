@@ -27,7 +27,7 @@ const ShareComponent = ({ link }) => {
       </div>
 
       <PinterestShareButton
-        url={`/${link}`}
+        url={`https://directfromowner.vercel.app/properties/${link}`}
         quote={"next-share is a social share buttons for your next React apps."}
         hashtag={"#nextshare"}
       >

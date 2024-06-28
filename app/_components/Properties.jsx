@@ -11,8 +11,8 @@ const Properties = () => {
           </h2>
 
           <p className="mt-4 max-w-md text-gray-500">
-            Let's select the most profitable and suitable investment for you
-            from our portfolio.
+            Let&apos;s select the most profitable and suitable investment for
+            you from our portfolio.
           </p>
         </header>
 

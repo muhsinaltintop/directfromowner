@@ -54,8 +54,8 @@ const ProjectDetails = () => {
             <li>Close coupled WC and wash hand basin.</li>
             <li>Living Room</li>
             <li>
-              12' 10" x 12' 5" (3.91m x 3.78m) Window to front, radiator, fitted
-              storage cupboard.
+              12&apos; 10&quot; x 12&apos; 5&quot; (3.91m x 3.78m) Window to
+              front, radiator, fitted storage cupboard.
             </li>
           </ul>
         </div>

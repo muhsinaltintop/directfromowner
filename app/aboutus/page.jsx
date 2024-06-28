@@ -8,6 +8,7 @@ import { FaPersonBurst } from "react-icons/fa6";
 import { BsTransparency } from "react-icons/bs";
 import { GrContact } from "react-icons/gr";
 import Contact from "../_components/Contact";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -27,6 +28,14 @@ const page = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+          <div className="flex items-start gap-4">
+            <Image
+              src="/about/about-1.png"
+              width={400}
+              height={200}
+              alt="properties"
+            />
+          </div>
           <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-fifth text-primary p-4">
               <IoEyeOutline />
@@ -72,6 +81,14 @@ const page = () => {
         </div>
 
         <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+          <div className="flex items-start gap-4">
+            <Image
+              src="/about/about-2.png"
+              width={400}
+              height={200}
+              alt="properties"
+            />
+          </div>
           <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-fifth text-primary p-4">
               <RiMoneyPoundCircleLine />
@@ -132,6 +149,14 @@ const page = () => {
 
         <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
           <div className="flex items-start gap-4">
+            <Image
+              src="/about/about-3.png"
+              width={400}
+              height={200}
+              alt="properties"
+            />
+          </div>
+          <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-fifth text-primary p-4">
               <GrUserExpert />
             </span>
@@ -140,7 +165,7 @@ const page = () => {
               <h2 className="text-lg font-bold">Experience and Expertise</h2>
 
               <p className="mt-1 text-sm text-gray-900">
-                OWith our extensive experience and expert team, we guarantee the
+                With our extensive experience and expert team, we guarantee the
                 best service at all times.
               </p>
             </div>

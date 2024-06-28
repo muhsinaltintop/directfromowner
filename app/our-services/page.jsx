@@ -1,5 +1,24 @@
 import servicesData from "../../public/_mocks/services.json";
-
+import { BsGraphUpArrow } from "react-icons/bs";
+import { FaRegHandshake } from "react-icons/fa6";
+import { AiOutlineTransaction } from "react-icons/ai";
+import { FaHouseChimneyUser } from "react-icons/fa6";
+import { GiAutoRepair } from "react-icons/gi";
+import { GiHouseKeys } from "react-icons/gi";
+import { BsFillHouseGearFill } from "react-icons/bs";
+import { FcInspection } from "react-icons/fc";
+import { GoLaw } from "react-icons/go";
+import { FaHandHoldingDollar } from "react-icons/fa6";
+import { FaHeadSideVirus } from "react-icons/fa6";
+import { BsHouseExclamation } from "react-icons/bs";
+import { VscGraph } from "react-icons/vsc";
+import { PiHeadsetFill } from "react-icons/pi";
+import { ImExit } from "react-icons/im";
+import { MdBedroomParent } from "react-icons/md";
+import { FaMoneyBillTrendUp } from "react-icons/fa6";
+import { FiArrowDown } from "react-icons/fi";
+import { GiReceiveMoney } from "react-icons/gi";
+import { MdOutlineManageAccounts } from "react-icons/md";
 const toCamelCase = (str) => {
   return str
     .toLowerCase()
@@ -8,6 +27,33 @@ const toCamelCase = (str) => {
       index === 0 ? word : word.charAt(0).toUpperCase() + word.slice(1)
     )
     .join("");
+};
+
+const iconMapping = {
+  "Market Analysis": BsGraphUpArrow,
+  "Negotiation Support": FaRegHandshake,
+  "Transaction Management": AiOutlineTransaction,
+  "Tenant Relations": FaHouseChimneyUser,
+  "Maintenance and Repairs": BsFillHouseGearFill,
+  "Rent Collection": GiHouseKeys,
+  "Property Inspections": FcInspection,
+  "Legal Compliance": GoLaw,
+  "Value Enhancement": FaHandHoldingDollar,
+  "Investment Analysis": BsGraphUpArrow,
+  "Strategic Planning": FaHeadSideVirus,
+  "Risk Management": BsHouseExclamation,
+  "Portfolio Management": VscGraph,
+  "Acquisition Support": PiHeadsetFill,
+  "Exit Strategies": ImExit,
+  "Property Acquisition": FaRegHandshake,
+  Renovation: BsFillHouseGearFill,
+  "Airbnb Preparation": FaHouseChimneyUser,
+  "Rental Management": GiHouseKeys,
+  "Guaranteed Income": FaMoneyBillTrendUp,
+  "Low-Cost Entry": FiArrowDown,
+  "High Returns": GiReceiveMoney,
+  "Professional Management": MdOutlineManageAccounts,
+  "Guaranteed Income": FaMoneyBillTrendUp,
 };
 
 const Page = () => {
@@ -25,74 +71,50 @@ const Page = () => {
               <p className="mt-8 text-gray-900">{service.opening}</p>
 
               <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
-                {service.services.map((subService, subIndex) => (
-                  <div key={subIndex} className="flex items-start gap-4">
-                    <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                      <svg
-                        className="h-5 w-5"
-                        fill="none"
-                        stroke="currentColor"
-                        viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg"
-                      >
-                        <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                        <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                        <path
-                          strokeLinecap="round"
-                          strokeLinejoin="round"
-                          strokeWidth="2"
-                          d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                        ></path>
-                      </svg>
-                    </span>
+                {service.services.map((subService, subIndex) => {
+                  const IconComponent = iconMapping[subService.subtitle];
+                  return (
+                    <div key={subIndex} className="flex items-start gap-4">
+                      <span className="shrink-0 rounded-lg bg-fifth p-4">
+                        {IconComponent && <IconComponent color="white" />}
+                      </span>
 
-                    <div>
-                      <h2 className="text-lg font-bold">
-                        {subService.subtitle}
-                      </h2>
-                      <p className="mt-1 text-sm text-gray-900">
-                        {subService.text}
-                      </p>
+                      <div>
+                        <h2 className="text-lg font-bold">
+                          {subService.subtitle}
+                        </h2>
+                        <p className="mt-1 text-sm text-gray-900">
+                          {subService.text}
+                        </p>
+                      </div>
                     </div>
-                  </div>
-                ))}
+                  );
+                })}
               </div>
 
               {service.benefits && service.benefits.length > 0 && (
                 <>
                   <p className="mt-8 text-fifth">Benefits:</p>
                   <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
-                    {service.benefits.map((benefit, benIndex) => (
-                      <div key={benIndex} className="flex items-start gap-4">
-                        <span className="shrink-0 rounded-lg bg-gray-800 p-4">
-                          <svg
-                            className="h-5 w-5"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg"
-                          >
-                            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-                            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth="2"
-                              d="M12 14l9-5-9-5-9 5 9 5zm0 0l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14zm-4 6v-7.5l4-2.222"
-                            ></path>
-                          </svg>
-                        </span>
+                    {service.benefits.map((benefit, benIndex) => {
+                      const IconComponent = iconMapping[benefit.subtitle];
+                      return (
+                        <div key={benIndex} className="flex items-start gap-4">
+                          <span className="shrink-0 rounded-lg  bg-fifth p-4">
+                            {IconComponent && <IconComponent color="white" />}
+                          </span>
 
-                        <div>
-                          <h2 className="text-lg font-bold">
-                            {benefit.subtitle}
-                          </h2>
-                          <p className="mt-1 text-sm text-gray-900">
-                            {benefit.text}
-                          </p>
+                          <div>
+                            <h2 className="text-lg font-bold">
+                              {benefit.subtitle}
+                            </h2>
+                            <p className="mt-1 text-sm text-gray-900">
+                              {benefit.text}
+                            </p>
+                          </div>
                         </div>
-                      </div>
-                    ))}
+                      );
+                    })}
                   </div>
                 </>
               )}

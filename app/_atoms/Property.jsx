@@ -5,7 +5,7 @@ import React from "react";
 const Property = () => {
   return (
     <Link
-      href="/properties/demo-property"
+      href="/properties/property-mainroad"
       className="group relative block overflow-hidden"
     >
       {/* <button className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">

@@ -1,14 +1,12 @@
-import Details from "../_atoms/Details";
-import Features from "../_atoms/Features";
 import ImageSlider from "../_atoms/ImageSlider";
 import ProjectDetails from "../_atoms/ProjectDetails";
 import SimpleFeatures from "../_atoms/SimpleFeatures";
 
-const SingleProperty = ({ title }) => {
+const SingleProperty = ({ link }) => {
   return (
     <div className="pb-5">
       <ImageSlider />
-      <SimpleFeatures />
+      <SimpleFeatures link={link} />
       <ProjectDetails />
 
       {/* <Features />

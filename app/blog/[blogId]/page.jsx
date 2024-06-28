@@ -14,16 +14,16 @@ const BlogDetails = async ({ params }) => {
     );
   }
 
-  const { title, body } = blogPost;
+  const { title, body, imageUrl } = blogPost;
 
   return (
     <div className="flex justify-center items-center min-h-screen p-4">
       <div className="w-full max-w-2xl">
         <div className="overflow-hidden rounded-lg shadow transition hover:shadow-lg flex flex-col items-center justify-center p-8">
           <Image
-            src="/blue-house.jpg"
-            alt="/blue-house.jpg"
-            width={270}
+            src={imageUrl}
+            alt={title}
+            width={500}
             height={100}
             className="rounded-t-lg m-4"
           />

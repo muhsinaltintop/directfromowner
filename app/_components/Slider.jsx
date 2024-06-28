@@ -8,14 +8,14 @@ const Slider = () => {
 
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">
         <div className="max-w-xl text-center ltr:sm:text-left rtl:sm:text-right">
-          <h1 className="text-3xl font-extrabold sm:text-5xl text-white">
+          <h1 className="text-3xl font-extrabold sm:text-5xl text-gray-900 sm:text-white">
             Your Trusted Expert in
-            <strong className="block font-extrabold text-white">
+            <strong className="block font-extrabold text-gray-900 sm:text-white">
               Property Investment
             </strong>
           </h1>
 
-          <p className="mt-4 max-w-lg sm:text-xl/relaxed text-white">
+          <p className="mt-4 max-w-lg sm:text-xl/relaxed text-gray-900 sm:text-white">
             With our investment consultancy services, we guide you to acquire
             your dream property under the best conditions.
           </p>

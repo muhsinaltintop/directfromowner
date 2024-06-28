@@ -27,16 +27,16 @@ const MainLead = () => {
             </Link>
           </div>
 
-          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-1">
             <Link
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="tel:+447438214612"
             >
-              <span className="inline-block rounded-lg bg-primary p-3">
-                <FaPhone size={45} />
+              <span className="inline-block rounded-lg bg-primary p-0 sm:p-3">
+                <FaPhone className="size-5 sm:size-10" />
               </span>
 
-              <h2 className="mt-2 font-bold text-xl">Call Us</h2>
+              <h2 className="mt-2 font-bold text-lg sm:text-xl">Call Us</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Call us to discuss your property investment needs.
@@ -47,11 +47,11 @@ const MainLead = () => {
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="mailto:metincelik75@gmail.com"
             >
-              <span className="inline-block rounded-lg bg-primary p-3">
-                <FaAt size={45} />
+              <span className="inline-block rounded-lg bg-primary p-0 sm:p-3">
+                <FaAt className="size-5 sm:size-10" />
               </span>
 
-              <h2 className="mt-2 font-bold text-xl">Email Us</h2>
+              <h2 className="mt-2 font-bold text-lg sm:text-xl">Email Us</h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Email us for detailed property consultation.
@@ -62,11 +62,13 @@ const MainLead = () => {
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
               href="/contact"
             >
-              <span className="inline-block rounded-lg bg-primary p-3">
-                <FaWpforms size={45} />
+              <span className="inline-block rounded-lg bg-primary p-0 sm:p-3">
+                <FaWpforms className="size-5 sm:size-10" />
               </span>
 
-              <h2 className="mt-2 font-bold text-xl">Fill the Form</h2>
+              <h2 className="mt-2 font-bold text-lg sm:text-xl">
+                Fill the Form
+              </h2>
 
               <p className="hidden sm:mt-1 sm:block sm:text-sm sm:text-gray-600">
                 Fill out the form for property investment.

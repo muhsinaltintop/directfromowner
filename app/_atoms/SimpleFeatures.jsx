@@ -1,13 +1,21 @@
-import React from "react";
-import { IoShareOutline } from "react-icons/io5";
+"use client";
+import React, { useState, useRef } from "react";
+import { FaShareAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
 import { FaBath } from "react-icons/fa6";
 import { FaBed } from "react-icons/fa";
 import { GiHomeGarage } from "react-icons/gi";
 import { MdDeviceThermostat } from "react-icons/md";
 import { GiHouse } from "react-icons/gi";
+import ModalComponent from "./ModalComponent";
 
-const SimpleFeatures = () => {
+const SimpleFeatures = ({ link }) => {
+  const [open, setOpen] = useState(false);
+  const shareButtonRef = useRef(null);
+
+  const handleOpen = () => setOpen(true);
+  const handleClose = () => setOpen(false);
+
   return (
     <section className="w-9/12 mx-auto mt-4 rounded-lg border bg-primary text-fifth">
       <div className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 ">
@@ -21,10 +29,21 @@ const SimpleFeatures = () => {
             </div>
             <div className="flex">
               <button
+                ref={shareButtonRef}
+                onClick={() => {
+                  open ? handleClose() : handleOpen();
+                }}
                 className="relative  border-none cursor-pointer flex group"
                 title="Share this property"
               >
-                <IoShareOutline size={28} className="text-fifth" />
+                <ModalComponent
+                  handleOpen={handleOpen}
+                  handleClose={handleClose}
+                  open={open}
+                  shareButtonRef={shareButtonRef}
+                  link={link}
+                />
+                <FaShareAlt size={28} className="text-fifth" />
               </button>
             </div>
           </div>

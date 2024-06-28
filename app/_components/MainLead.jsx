@@ -17,7 +17,7 @@ const MainLead = () => {
             </p>
 
             <Link
-              href="#"
+              href="/contact"
               className="mt-8 inline-block rounded bg-fifth px-8 py-2 text-xl font-medium text-primary shadow hover:bg-primary hover:text-fifth ocus:outline-none focus:ring active:bg-third active:text-fifth sm:w-auto"
             >
               Contact

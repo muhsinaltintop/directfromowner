@@ -7,6 +7,7 @@ import { GrUserExpert } from "react-icons/gr";
 import { FaPersonBurst } from "react-icons/fa6";
 import { BsTransparency } from "react-icons/bs";
 import { GrContact } from "react-icons/gr";
+import Contact from "../_components/Contact";
 
 const page = () => {
   return (
@@ -194,6 +195,9 @@ const page = () => {
                 side for all your real estate needs!
               </p>
             </div>
+          </div>
+          <div className="mt-8">
+            <Contact />
           </div>
         </div>
       </div>

@@ -3,7 +3,7 @@ import React from "react";
 
 const Slider = () => {
   return (
-    <section className="relative bg-[url(/banner.png)] bg-cover bg-center bg-no-repeat">
+    <section className="relative bg-[url(/slider.png)] bg-cover bg-center bg-no-repeat">
       <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 "></div>
 
       <div className="relative mx-auto max-w-screen-xl px-4 py-32 sm:px-6 lg:flex lg:h-screen lg:items-center lg:px-8">

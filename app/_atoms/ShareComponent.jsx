@@ -13,7 +13,6 @@ import {
 const ShareComponent = ({ link }) => {
   return (
     <div className="flex">
-      {console.log(link)}
       <div>
         <FacebookShareButton
           url={`/${link}`}

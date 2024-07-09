@@ -1,8 +1,8 @@
 "use client";
 import React, { useState } from "react";
-import Image from "next/image";
 import Link from "next/link";
 import { RxHamburgerMenu } from "react-icons/rx";
+import Logo from "../_atoms/LogoN";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -14,12 +14,7 @@ const Header = () => {
           <div className="flex-1 md:flex md:items-center md:gap-12">
             <Link className="block text-primary text-lg " href="/">
               <span className="sr-only">Home</span>
-              <Image
-                src={"/logo-yatay.png"}
-                width="200"
-                height="200"
-                alt="logo"
-              />
+              <Logo />
             </Link>
           </div>
 

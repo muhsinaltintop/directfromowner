@@ -34,7 +34,9 @@ const getLogo = async () => {
 };
 
 const getSlide = async () => {
-  const data = await fetchData("/sliders?populate=*");
+  const data = await fetchData("/sliders?populate=*", {
+    next: { tags: ["slide"] },
+  });
   return data.data;
 };
 export { getLogo, getSlide };

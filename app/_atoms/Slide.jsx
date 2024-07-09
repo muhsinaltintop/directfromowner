@@ -10,7 +10,7 @@ const Slide = async () => {
         return (
           <section
             key={index}
-            className="relative bg-[url(/slider.png)] bg-cover bg-center bg-no-repeat"
+            className={`relative bg-[url(https://panel.theglobalproperty.co.uk${item?.attributes?.sliderImage?.data?.attributes?.url})] bg-cover bg-center bg-no-repeat`}
           >
             <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 "></div>
 

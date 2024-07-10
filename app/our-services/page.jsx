@@ -73,7 +73,10 @@ const Page = () => {
                   const IconComponent = iconMapping[subService.subtitle];
                   return (
                     <div key={subIndex} className="flex items-start gap-4">
-                      <span className="shrink-0 rounded-lg bg-fifth p-4">
+                      <span
+                        key={subIndex}
+                        className="shrink-0 rounded-lg bg-fifth p-4"
+                      >
                         {IconComponent && <IconComponent color="white" />}
                       </span>
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Property from "../_atoms/Property";
 
-const Properties = ({ data }) => {
+const Properties = ({ propertyData }) => {
   return (
     <section>
       <div className="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 sm:py-6 lg:px-4">
@@ -227,7 +227,7 @@ const Properties = ({ data }) => {
 
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <li>
-            <Property data={data} />
+            <Property data={propertyData} />
           </li>
         </ul>
       </div>

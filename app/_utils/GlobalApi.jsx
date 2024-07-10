@@ -3,7 +3,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
-    // cache: "no-store",
+    cache: "no-store",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${API_KEY}`,

@@ -7,8 +7,7 @@ const page = async () => {
 
   return (
     <div>
-      
-      <Properties data={data} />
+      <Properties propertyData={data} />
     </div>
   );
 };

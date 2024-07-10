@@ -3,7 +3,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
-    cache: "no-store",
+    // cache: "no-store",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${API_KEY}`,
@@ -27,24 +27,39 @@ const fetchData = async (endpoint, options = {}) => {
 };
 
 const getLogo = async () => {
-  const data = await fetchData("/logos?populate=*", {
-    next: { tags: ["logo"] },
-  });
-  return data?.data;
+  try {
+    const data = await fetchData("/logos?populate=*", {
+      next: { tags: ["logo"] },
+    });
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching logo:", error);
+    throw error;
+  }
 };
 
 const getSlide = async () => {
-  const data = await fetchData("/sliders?populate=*", {
-    next: { tags: ["slider"] },
-  });
-  return data?.data;
+  try {
+    const data = await fetchData("/sliders?populate=*", {
+      next: { tags: ["slider"] },
+    });
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching slide:", error);
+    throw error;
+  }
 };
 
 const getProperty = async () => {
-  const data = await fetchData("/properties?populate=*", {
-    next: { tags: ["property"] },
-  });
-  return data?.data;
+  try {
+    const data = await fetchData("/properties?populate=*", {
+      next: { tags: ["property"] },
+    });
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching property:", error);
+    throw error;
+  }
 };
 
 export { getLogo, getSlide, getProperty };

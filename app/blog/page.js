@@ -10,7 +10,7 @@ const Blog = async () => {
           Blogs&News
         </h2>
         <div className="flex flex-wrap items-center gap-5">
-          {data.map((post, index) => (
+          {data?.map((post, index) => (
             <div
               key={index}
               className="flex flex-wrap overflow-hidden rounded-lg shadow transition hover:shadow-lg p-8 justify-center items-center w-96 h-122 mx-auto"

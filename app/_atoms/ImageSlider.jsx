@@ -20,7 +20,7 @@ const ImageSlider = ({ propertyImage }) => {
         />
       </div>
       <div className="flex space-x-2">
-        {propertyImage.data.map((img) => (
+        {propertyImage?.data?.map((img) => (
           <div
             key={img.id}
             className={`cursor-pointer border-2 ${

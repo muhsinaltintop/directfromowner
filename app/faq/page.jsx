@@ -10,7 +10,7 @@ const Page = () => {
         </h1>
       </div>
       <div className="space-y-4">
-        {faqData.map((faq, i) => (
+        {faqData?.map((faq, i) => (
           <details
             key={faq.id}
             className="group [&_summary::-webkit-details-marker]:hidden"

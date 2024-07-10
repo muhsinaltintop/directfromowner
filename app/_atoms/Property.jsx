@@ -8,7 +8,7 @@ const Property = ({ data }) => {
       href="/properties/property-mainroad"
       className="group relative block overflow-hidden"
     >
-      {data.map((item) => {
+      {data?.map((item) => {
         return (
           <div key={item.id}>
             <Image

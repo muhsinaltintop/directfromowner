@@ -8,11 +8,11 @@ const ProjectDetails = ({ data }) => {
 
         <h3 className="my-4   text-lg font-bold">Key Features</h3>
 
-        {data.map((item) => (
+        {data?.map((item) => (
           <div key={item.id} className="text-gray-800">
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc pl-5">
-              {item.attributes.keyFeatures
-                .split("\n")
+              {item?.attributes?.keyFeatures
+                ?.split("\n")
                 .filter((feature) => feature.trim() !== "")
                 .map((feature) => (
                   <li key={feature.id}>

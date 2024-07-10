@@ -5,9 +5,10 @@ import { getProperty } from "@/app/_utils/GlobalApi";
 const page = async ({ params }) => {
   const link = params.property;
   const data = await getProperty();
+
   return (
     <div className="">
-      {data.map((item) => {
+      {data?.map((item) => {
         return (
           <div key={item.id}>
             <Breadcrumb property={item.attributes.propertyName} />

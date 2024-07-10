@@ -18,7 +18,7 @@ const SimpleFeatures = ({ link, data }) => {
 
   return (
     <section className="w-9/12 mx-auto mt-4 rounded-lg border bg-primary text-fifth">
-      {data.map((item) => {
+      {data?.map((item) => {
         return (
           <div
             key={item.id}

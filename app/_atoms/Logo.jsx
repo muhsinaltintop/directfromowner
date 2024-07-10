@@ -7,7 +7,7 @@ const Logo = async () => {
 
   return (
     <div>
-      {data.map((item, index) => {
+      {data?.map((item, index) => {
         return (
           <Image
             key={item?.id}

@@ -6,7 +6,7 @@ const Slider = async () => {
   const slides = await getSlide();
   return (
     <div>
-      {slides.map((slide, index) => (
+      {slides?.map((slide) => (
         <Slide key={slide.id} slide={slide} />
       ))}
     </div>

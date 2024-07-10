@@ -2,12 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-const Property = () => {
+const Property = ({ data }) => {
   return (
     <Link
       href="/properties/property-mainroad"
       className="group relative block overflow-hidden"
     >
+      {console.log("data:", data)}
       {/* <button className="absolute end-4 top-4 z-10 rounded-full bg-white p-1.5 text-gray-900 transition hover:text-gray-900/75">
         <span className="sr-only">Wishlist</span>
 

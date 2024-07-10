@@ -39,4 +39,12 @@ const getSlide = async () => {
   });
   return data.data;
 };
-export { getLogo, getSlide };
+
+const getProperty = async () => {
+  const data = await fetchData("/properties?populate=*", {
+    next: { tags: ["property"] },
+  });
+  return data.data;
+};
+
+export { getLogo, getSlide, getProperty };

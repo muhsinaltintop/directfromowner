@@ -1,10 +1,14 @@
 import React from "react";
 import Properties from "../_components/Properties";
+import { getProperty } from "../_utils/GlobalApi";
 
-const page = () => {
+const page = async () => {
+  const data = await getProperty();
+
   return (
     <div>
-      <Properties />
+      
+      <Properties data={data} />
     </div>
   );
 };

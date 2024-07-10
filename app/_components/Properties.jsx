@@ -1,7 +1,7 @@
 import React from "react";
 import Property from "../_atoms/Property";
 
-const Properties = () => {
+const Properties = ({ data }) => {
   return (
     <section>
       <div className="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 sm:py-6 lg:px-4">
@@ -65,10 +65,7 @@ const Properties = () => {
                 <div className="z-50 group-open:absolute group-open:top-auto group-open:mt-2 ltr:group-open:start-0">
                   <div className="w-96 rounded border border-gray-200 bg-white">
                     <header className="flex items-center justify-between p-4">
-                      <span className="text-sm text-gray-700">
-                        {" "}
-                        0 Selected{" "}
-                      </span>
+                      <span className="text-sm text-gray-700">0 Selected</span>
 
                       <button
                         type="button"
@@ -230,7 +227,7 @@ const Properties = () => {
 
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <li>
-            <Property />
+            <Property data={data} />
           </li>
         </ul>
       </div>

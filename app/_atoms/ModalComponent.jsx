@@ -1,6 +1,5 @@
 import { Box, Modal, Typography } from "@mui/material";
 import React, { useEffect, useState } from "react";
-import SocialIcons from "./SocialIcons";
 import ShareComponent from "./ShareComponent";
 
 const ModalComponent = ({ open, handleClose, shareButtonRef, link }) => {

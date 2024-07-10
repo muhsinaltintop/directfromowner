@@ -30,14 +30,14 @@ const getLogo = async () => {
   const data = await fetchData("/logos?populate=*", {
     next: { tags: ["logo"] },
   });
-  return data.data;
+  return data?.data;
 };
 
 const getSlide = async () => {
   const data = await fetchData("/sliders?populate=*", {
     next: { tags: ["slider"] },
   });
-  return data.data;
+  return data?.data;
 };
 
 const getProperty = async () => {

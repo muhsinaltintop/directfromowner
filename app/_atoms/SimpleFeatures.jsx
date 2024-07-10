@@ -21,7 +21,7 @@ const SimpleFeatures = ({ link, data }) => {
       {data?.map((item) => {
         return (
           <div
-            key={item.id}
+            key={item?.id}
             className="max-w-screen-xl px-4 py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-16 "
           >
             <div className="">
@@ -30,7 +30,7 @@ const SimpleFeatures = ({ link, data }) => {
             <div>
               <div className="flex justify-between mt-4 text-cyan-950">
                 <div>
-                  <h1>{item.attributes.address}</h1>
+                  <h1>{item?.attributes?.address}</h1>
                 </div>
                 <div className="flex">
                   <button
@@ -55,8 +55,8 @@ const SimpleFeatures = ({ link, data }) => {
               <div className="flex justify-between mt-4 text-cyan-950">
                 <div>
                   <h3>
-                    <span key={item.id} className="font-bold">
-                      £ {item.attributes.price}
+                    <span key={item?.id} className="font-bold">
+                      £ {item?.attributes?.price}
                     </span>
                   </h3>
                 </div>
@@ -76,7 +76,7 @@ const SimpleFeatures = ({ link, data }) => {
                   <h2 className="text-lg font-bold">Property Type</h2>
 
                   <p className="mt-1 text-sm text-black">
-                    {item.attributes.propertyType}
+                    {item?.attributes?.propertyType}
                   </p>
                 </div>
               </div>
@@ -90,7 +90,7 @@ const SimpleFeatures = ({ link, data }) => {
                   <h2 className="text-lg font-bold">Constrution Year</h2>
 
                   <p className="mt-1 text-sm text-black">
-                    {item.attributes.constructionYear}
+                    {item?.attributes?.constructionYear}
                   </p>
                 </div>
               </div>
@@ -104,7 +104,7 @@ const SimpleFeatures = ({ link, data }) => {
                   <h2 className="text-lg font-bold">Heating</h2>
 
                   <p className="mt-1 text-sm text-black">
-                    {item.attributes.heatingType}
+                    {item?.attributes?.heatingType}
                   </p>
                 </div>
               </div>
@@ -118,7 +118,7 @@ const SimpleFeatures = ({ link, data }) => {
                   <h2 className="text-lg font-bold">Number of Bedroom</h2>
 
                   <p className="mt-1 text-sm text-black">
-                    {item.attributes.numberOfBedroom}
+                    {item?.attributes?.numberOfBedroom}
                   </p>
                 </div>
               </div>
@@ -132,7 +132,7 @@ const SimpleFeatures = ({ link, data }) => {
                   <h2 className="text-lg font-bold">Number of Bathroom</h2>
 
                   <p className="mt-1 text-sm text-black">
-                    {item.attributes.numberOfBathroom}
+                    {item?.attributes?.numberOfBathroom}
                   </p>
                 </div>
               </div>
@@ -146,7 +146,7 @@ const SimpleFeatures = ({ link, data }) => {
                   <h2 className="text-lg font-bold">Garage</h2>
 
                   <p className="mt-1 text-sm text-black">
-                    {item.attributes.numberOfGarage}
+                    {item?.attributes?.numberOfGarage}
                   </p>
                 </div>
               </div>

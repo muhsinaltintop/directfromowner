@@ -8,7 +8,7 @@ const Services = () => {
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           {mainServices?.map((item, index) => (
             <li key={index}>
-              <Service title={item.title} detail={item.detail} />
+              <Service title={item?.title} detail={item?.detail} />
             </li>
           ))}
         </ul>

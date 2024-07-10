@@ -10,8 +10,8 @@ const page = async ({ params }) => {
     <div className="">
       {data?.map((item) => {
         return (
-          <div key={item.id}>
-            <Breadcrumb property={item.attributes.propertyName} />
+          <div key={item?.id}>
+            <Breadcrumb property={item?.attributes?.propertyName} />
             <SingleProperty title={params.property} link={link} data={data} />
           </div>
         );

@@ -10,7 +10,7 @@ const Property = ({ data }) => {
     >
       {data?.map((item) => {
         return (
-          <div key={item.id}>
+          <div key={item?.id}>
             <Image
               src={`https://panel.theglobalproperty.co.uk${item?.attributes?.mainImage?.data?.attributes?.url}`}
               alt="alt"
@@ -20,20 +20,20 @@ const Property = ({ data }) => {
             />
             <div className="relative border border-gray-100 bg-white p-6">
               <span className="whitespace-nowrap bg-fifth px-3 py-1.5 text-xs font-medium text-primary">
-                {item.attributes.isItReady
+                {item?.attributes?.isItReady
                   ? "Ready"
-                  : item.attributes.willBeReadyOn}
+                  : item?.attributes?.willBeReadyOn}
               </span>
               <span className="whitespace-nowrap bg-primary px-3 py-1.5 text-xs font-medium text-fifth ml-4">
                 {item?.attributes?.city}
               </span>
 
               <h3 className="mt-4 text-lg font-medium text-gray-900">
-                {item?.attributes.address}
+                {item?.attributes?.address}
               </h3>
 
               <p className="mt-1.5 text-sm text-gray-700">
-                £{item?.attributes.price}
+                £{item?.attributes?.price}
               </p>
 
               <form className="mt-4">

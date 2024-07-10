@@ -9,7 +9,7 @@ const ProjectDetails = ({ data }) => {
         <h3 className="my-4   text-lg font-bold">Key Features</h3>
 
         {data?.map((item) => (
-          <div key={item.id} className="text-gray-800">
+          <div key={item?.id} className="text-gray-800">
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc pl-5">
               {item?.attributes?.keyFeatures
                 ?.split("\n")
@@ -26,7 +26,7 @@ const ProjectDetails = ({ data }) => {
               <p>{item?.attributes?.projectDescription}</p>
               <h3 className="my-4 text-lg font-bold">Groud Floor Details</h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc pl-5">
-                {item.attributes.groundFloorDetails
+                {item?.attributes?.groundFloorDetails
                   .split("\n")
                   .filter((detail) => detail.trim() !== "")
                   .map((detail) => (
@@ -39,7 +39,7 @@ const ProjectDetails = ({ data }) => {
             </div>
 
             <div className="mt-4 flex flex-wrap gap-1">
-              {item.attributes.keywords
+              {item?.attributes?.keywords
                 .split(",")
                 .filter((keywords) => keywords.trim() !== "")
                 .map((keywords) => (

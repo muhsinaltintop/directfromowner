@@ -7,7 +7,7 @@ const Slider = async () => {
   return (
     <div>
       {slides?.map((slide) => (
-        <Slide key={slide.id} slide={slide} />
+        <Slide key={slide?.id} slide={slide} />
       ))}
     </div>
   );

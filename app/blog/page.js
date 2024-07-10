@@ -16,11 +16,11 @@ const Blog = async () => {
               className="flex flex-wrap overflow-hidden rounded-lg shadow transition hover:shadow-lg p-8 justify-center items-center w-96 h-122 mx-auto"
             >
               <Link
-                href={`/blog/${post.id}`}
+                href={`/blog/${post?.id}`}
                 className="flex flex-col items-center"
               >
                 <Image
-                  src={post.imageUrl}
+                  src={post?.imageUrl}
                   alt="/blue-house.jpg"
                   width={270}
                   height={100}

@@ -15,7 +15,7 @@ const ProjectDetails = ({ data }) => {
                 ?.split("\n")
                 .filter((feature) => feature.trim() !== "")
                 .map((feature) => (
-                  <li key={feature.id}>
+                  <li key={feature?.id}>
                     {feature}
                     <br />
                   </li>
@@ -30,7 +30,7 @@ const ProjectDetails = ({ data }) => {
                   .split("\n")
                   .filter((detail) => detail.trim() !== "")
                   .map((detail) => (
-                    <li key={detail.id}>
+                    <li key={detail?.id}>
                       {detail}
                       <br />
                     </li>

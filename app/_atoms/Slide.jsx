@@ -8,14 +8,14 @@ const Slide = ({ slide }) => {
     sliderButtonFirst,
     sliderButtonSecond,
     sliderImage,
-  } = slide.attributes;
+  } = slide?.attributes;
 
   return (
     <section
-      key={slide.id}
+      key={slide?.id}
       className="relative bg-cover bg-center bg-no-repeat"
       style={{
-        backgroundImage: `url(https://panel.theglobalproperty.co.uk${sliderImage.data.attributes.url})`,
+        backgroundImage: `url(https://panel.theglobalproperty.co.uk${sliderImage?.data?.attributes?.url})`,
       }}
     >
       <div className="absolute inset-0 bg-white/75 sm:bg-transparent sm:from-white/95 sm:to-white/25 "></div>

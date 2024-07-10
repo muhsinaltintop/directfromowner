@@ -3,7 +3,7 @@ import ProjectDetails from "../_atoms/ProjectDetails";
 import SimpleFeatures from "../_atoms/SimpleFeatures";
 
 const SingleProperty = ({ link, data }) => {
-  const { propertyImage } = data[0].attributes;
+  const { propertyImage } = data[0]?.attributes;
 
   return (
     <div className="pb-5">

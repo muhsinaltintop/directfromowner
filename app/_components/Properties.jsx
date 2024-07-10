@@ -1,7 +1,9 @@
 import React from "react";
 import Property from "../_atoms/Property";
+import { getProperty } from "../_utils/GlobalApi";
 
-const Properties = ({ propertyData }) => {
+const Properties = async () => {
+  const data = await getProperty();
   return (
     <section>
       <div className="mx-auto max-w-screen-xl px-2 py-4 sm:px-6 sm:py-6 lg:px-4">
@@ -227,7 +229,7 @@ const Properties = ({ propertyData }) => {
 
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           <li>
-            <Property data={propertyData} />
+            <Property data={data} />
           </li>
         </ul>
       </div>

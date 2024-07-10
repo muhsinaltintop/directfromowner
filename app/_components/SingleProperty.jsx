@@ -1,8 +1,10 @@
 import ImageSlider from "../_atoms/ImageSlider";
 import ProjectDetails from "../_atoms/ProjectDetails";
 import SimpleFeatures from "../_atoms/SimpleFeatures";
+import { getProperty } from "../_utils/GlobalApi";
 
-const SingleProperty = ({ link, data }) => {
+const SingleProperty = async ({ link }) => {
+  const data = await getProperty();
   const { propertyImage } = data[0]?.attributes;
 
   return (

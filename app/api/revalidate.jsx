@@ -1,30 +1,47 @@
-export default async function handler(req, res) {
-  // Validate the secret token
-  if (req.query.secret !== process.env.SECRET) {
-    return res.status(401).json({ message: "Invalid token" });
+import { revalidateTag } from "next/cache";
+
+export async function POST(req) {
+  const body = await req.json(); // Parse the request body as JSON
+  const tag = body?.model; // Extract the 'model' from the parsed body
+  console.log(tag);
+  const url = new URL(req.url, `http://${req.headers.host}`);
+  const secret = url.searchParams.get("secret");
+
+  if (secret !== process.env.SECRET) {
+    return new Response(
+      JSON.stringify({
+        revalidated: false,
+        now: Date.now(),
+        message: "Invalid Token",
+      }),
+      {
+        headers: { "Content-Type": "application/json" },
+        status: 401,
+      }
+    );
   }
-
-  try {
-    const { event, entry, model } = req.body;
-
-    // Handle different Strapi events
-    switch (event) {
-      case "entry.update":
-      case "entry.create":
-      case "entry.publish":
-        // Construct the path to revalidate
-        const path =
-          model === "page"
-            ? `/${entry?.slug ?? ""}`
-            : `/${model}/${entry?.slug ?? ""}`;
-        await res.revalidate(path);
-        return res.json({ revalidated: true, path });
-
-      default:
-        return res.status(400).json({ message: `Invalid event "${event}"` });
+  if (tag) {
+    revalidateTag(tag);
+    return new Response(
+      JSON.stringify({
+        revalidated: true,
+        now: Date.now(),
+      }),
+      {
+        headers: { "Content-Type": "application/json" },
+        status: 200,
+      }
+    );
+  }
+  return new Response(
+    JSON.stringify({
+      revalidated: false,
+      now: Date.now(),
+    }),
+    {
+      headers: { "Content-Type": "application/json" },
+      status: 400,
+      statusText: "Tag couldn't find",
     }
-  } catch (err) {
-    console.error("Revalidation error:", err);
-    return res.status(500).json({ message: "Error revalidating" });
-  }
+  );
 }

@@ -3,7 +3,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
-    // cache: "no-store",
+    cache: "no-store",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${API_KEY}`,
@@ -28,9 +28,7 @@ const fetchData = async (endpoint, options = {}) => {
 
 const getLogo = async () => {
   try {
-    const data = await fetchData("/logos?populate=*", {
-      next: { tags: ["logo"] },
-    });
+    const data = await fetchData("/logos?populate=*");
     return data?.data;
   } catch (error) {
     console.error("Error fetching logo:", error);
@@ -40,9 +38,7 @@ const getLogo = async () => {
 
 const getSlide = async () => {
   try {
-    const data = await fetchData("/sliders?populate=*", {
-      next: { tags: ["slider"] },
-    });
+    const data = await fetchData("/sliders?populate=*");
     return data?.data;
   } catch (error) {
     console.error("Error fetching slide:", error);
@@ -52,9 +48,12 @@ const getSlide = async () => {
 
 const getProperty = async () => {
   try {
-    const data = await fetchData("/properties?populate=*", {
-      next: { tags: ["property"] },
-    });
+    const data = await fetchData(
+      "/properties?populate=*"
+      // {
+      //   next: { tags: ["property"] },
+      // }
+    );
     return data?.data;
   } catch (error) {
     console.error("Error fetching property:", error);

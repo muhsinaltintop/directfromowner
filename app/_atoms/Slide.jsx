@@ -39,7 +39,7 @@ const Slide = ({ slide }) => {
             </Link>
 
             <Link
-              href="#"
+              href="/our-services"
               className="block w-full rounded bg-primary px-12 py-3 text-sm font-medium text-fifth shadow hover:bg-fifth hover:text-primary focus:outline-none focus:ring active:bg-third active:text-fifth sm:w-auto"
             >
               {sliderButtonSecond}

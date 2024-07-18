@@ -40,7 +40,7 @@ const Service = ({ title, detail }) => {
       </div>
 
       <div className="absolute inset-0 flex flex-col items-start justify-end">
-        <div className="bg-fifth p-3">
+        <div className="bg-fifth p-3 min-h-44">
           <h3 className="text-xl font-medium text-primary">{title}</h3>
 
           <p className="mt-1 text-pretty text-sm text-primary">{detail}</p>

@@ -13,6 +13,7 @@ export default function Home() {
         <Banner />
       </div>
       <div className="w-12/12 mx-40">
+      <h2 className="font-bold text-fifth text-2xl text-center">Services</h2>
         <Services />
       </div>
       <div>

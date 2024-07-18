@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import { FaBath, FaBed } from "react-icons/fa";
 
 const Property = ({ data }) => {
   return (
@@ -25,7 +26,7 @@ const Property = ({ data }) => {
                   : item?.attributes?.willBeReadyOn}
               </span>
               <span className="whitespace-nowrap bg-primary px-3 py-1.5 text-xs font-medium text-fifth ml-4">
-                {item?.attributes?.city}
+               Location: {item?.attributes?.city}
               </span>
 
               <h3 className="mt-4 text-lg font-medium text-gray-900">
@@ -35,6 +36,33 @@ const Property = ({ data }) => {
               <p className="mt-1.5 text-sm text-gray-700">
                 £{item?.attributes?.price}
               </p>
+             <div className="flex gap-2 mt-2">
+              <div className="flex items-center gap-2">
+                <span className="shrink-0 rounded-lg bg-fifth text-primary p-2">
+                  <FaBed size={16} color="white" />
+                </span>
+
+                <div>
+                  
+
+                  <p className="mt-1 text-sm text-black">
+                    {item?.attributes?.numberOfBedroom} Bedroom
+                  </p>
+                </div>
+              </div>
+              <div className="flex items-center gap-2">
+                <span className="shrink-0 rounded-lg bg-fifth text-primary p-2">
+                  <FaBath size={16} color="white" />
+                </span>
+
+                <div>
+                    <p className="mt-1 text-sm text-black">
+                    {item?.attributes?.numberOfBathroom} Bathroom
+                  </p>
+                </div>
+              </div>
+              </div>
+              
 
               <form className="mt-4">
                 <button className="block w-full rounded bg-fifth p-4 text-sm font-medium transition hover:scale-105 text-primary">

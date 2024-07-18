@@ -60,9 +60,6 @@ const SimpleFeatures = ({ link, data }) => {
                     </span>
                   </h3>
                 </div>
-                <div>
-                  <h3>Added on 25/06/2024</h3>
-                </div>
               </div>
             </div>
 

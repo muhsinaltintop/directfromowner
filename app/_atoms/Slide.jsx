@@ -32,7 +32,7 @@ const Slide = ({ slide }) => {
 
           <div className="mt-8 flex flex-wrap gap-4 text-center">
             <Link
-              href="#"
+              href="/properties"
               className="block w-full rounded bg-fifth px-12 py-3 text-sm font-medium text-primary shadow hover:bg-primary hover:text-fifth focus:outline-none focus:ring active:bg-third active:text-fifth sm:w-auto"
             >
               {sliderButtonFirst}

@@ -38,6 +38,14 @@ const HamburgerMenu = () => {
             <li>
               <Link
                 className="text-primary text-lg transition hover:text-gray-200"
+                href="/why-uk"
+              >
+                Why UK
+              </Link>
+            </li>
+            <li>
+              <Link
+                className="text-primary text-lg transition hover:text-gray-200"
                 href="/blog"
               >
                 Blog&News

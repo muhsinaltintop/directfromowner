@@ -17,7 +17,7 @@ const page = () => {
           <h2 className="text-3xl font-bold sm:text-4xl">About Us</h2>
 
           <p className="mt-4 text-gray-900">
-            Global Realty Management specialises in the buying, selling, and
+            Global Property Management specialises in the buying, selling, and
             management of real estate in both the UK and Turkey. We provide
             reliable, professional, and personalised services to ensure our
             clients get the best out of their property investments. With years
@@ -191,7 +191,7 @@ const page = () => {
             <div>
               <p className="mt-1 text-large text-gray-900">
                 To reach us and learn more about our services, you can fill out
-                our contact form. Global Realty Management is always by your
+                our contact form. Global Property Management is always by your
                 side for all your real estate needs!
               </p>
             </div>

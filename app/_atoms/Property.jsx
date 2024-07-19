@@ -6,14 +6,12 @@ import { FaBath, FaBed } from "react-icons/fa";
 const Property = ({ data }) => {
   return (
     <Link
-      href="/properties/property-mainroad"
+      href={`/properties/${data?.attributes?.propertyName}`}
       className="group relative block overflow-hidden"
     >
-      {data?.map((item) => {
-        return (
-          <div key={item?.id}>
+      
             <Image
-              src={`https://panel.theglobalproperty.co.uk${item?.attributes?.mainImage?.data?.attributes?.url}`}
+              src={`https://panel.theglobalproperty.co.uk${data?.attributes?.mainImage?.data?.attributes?.url}`}
               alt="alt"
               className="h-64 w-full object-cover transition duration-500 group-hover:scale-105 sm:h-72"
               height="350"
@@ -21,20 +19,20 @@ const Property = ({ data }) => {
             />
             <div className="relative border border-gray-100 bg-white p-6">
               <span className="whitespace-nowrap bg-fifth px-3 py-1.5 text-xs font-medium text-primary">
-                {item?.attributes?.isItReady
+                {data?.attributes?.isItReady
                   ? "Ready"
-                  : item?.attributes?.willBeReadyOn}
+                  : data?.attributes?.willBeReadyOn}
               </span>
               <span className="whitespace-nowrap bg-primary px-3 py-1.5 text-xs font-medium text-fifth ml-4">
-               Location: {item?.attributes?.city}
+               Location: {data?.attributes?.city}
               </span>
 
               <h3 className="mt-4 text-lg font-medium text-gray-900">
-                {item?.attributes?.address}
+                {data?.attributes?.address}
               </h3>
 
               <p className="mt-1.5 text-sm text-gray-700">
-                £{item?.attributes?.price}
+                £{data?.attributes?.price}
               </p>
              <div className="flex gap-2 mt-2">
               <div className="flex items-center gap-2">
@@ -46,7 +44,7 @@ const Property = ({ data }) => {
                   
 
                   <p className="mt-1 text-sm text-black">
-                    {item?.attributes?.numberOfBedroom} Bedroom
+                    {data?.attributes?.numberOfBedroom} Bedroom
                   </p>
                 </div>
               </div>
@@ -57,7 +55,7 @@ const Property = ({ data }) => {
 
                 <div>
                     <p className="mt-1 text-sm text-black">
-                    {item?.attributes?.numberOfBathroom} Bathroom
+                    {data?.attributes?.numberOfBathroom} Bathroom
                   </p>
                 </div>
               </div>
@@ -70,9 +68,6 @@ const Property = ({ data }) => {
                 </button>
               </form>
             </div>
-          </div>
-        );
-      })}
     </Link>
   );
 };

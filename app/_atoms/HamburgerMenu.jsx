@@ -40,7 +40,7 @@ const HamburgerMenu = () => {
                 className="text-primary text-lg transition hover:text-gray-200"
                 href="/why-uk"
               >
-                Why UK
+                Why UK?
               </Link>
             </li>
             <li>
@@ -48,7 +48,7 @@ const HamburgerMenu = () => {
                 className="text-primary text-lg transition hover:text-gray-200"
                 href="/blog"
               >
-                Blog&News
+                Blog & News
               </Link>
             </li>
             <li>

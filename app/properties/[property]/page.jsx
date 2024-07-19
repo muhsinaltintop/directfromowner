@@ -1,13 +1,13 @@
 import Breadcrumb from "@/app/_atoms/Breadcrumb";
 import SingleProperty from "@/app/_components/SingleProperty";
-import { getProperty } from "@/app/_utils/GlobalApi";
 
 const page = ({ params }) => {
   const link = params.property;
+  const breadLink = decodeURIComponent(link)
 
   return (
     <div className="">
-      <Breadcrumb property={link} />
+      <Breadcrumb property={breadLink} />
       <SingleProperty title={params.property} link={link} />
     </div>
   );

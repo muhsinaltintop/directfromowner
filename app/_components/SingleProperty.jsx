@@ -13,8 +13,7 @@ const SingleProperty = async ({ link }) => {
       <SimpleFeatures link={link} data={data} />
       <ProjectDetails data={data} />
 
-      {/* <Features />
-      <Details /> */}
+      
     </div>
   );
 };

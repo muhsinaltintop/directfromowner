@@ -1,6 +1,6 @@
 import React from "react";
 
-const Breadcrumb = ({ property }) => {
+const Breadcrumb = ({propertyName}) => {
   return (
     <nav aria-label="Breadcrumb" className="flex pt-5 ml-5">
       <ol className="flex overflow-hidden rounded-lg border border-gray-200 text-gray-600">
@@ -43,7 +43,7 @@ const Breadcrumb = ({ property }) => {
             href="#"
             className="flex h-10 items-center bg-white pe-4 ps-8 text-xs font-medium transition hover:text-gray-900"
           >
-            {property}
+            {propertyName}
           </a>
         </li>
       </ol>

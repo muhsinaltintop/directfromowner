@@ -6,10 +6,10 @@ import { FaBath, FaBed } from "react-icons/fa";
 const Property = ({ data }) => {
   return (
     <Link
-      href={`/properties/${data?.attributes?.propertyName}`}
+      href={`/properties/${data?.id}`}
       className="group relative block overflow-hidden"
     >
-      
+
             <Image
               src={`https://panel.theglobalproperty.co.uk${data?.attributes?.mainImage?.data?.attributes?.url}`}
               alt="alt"

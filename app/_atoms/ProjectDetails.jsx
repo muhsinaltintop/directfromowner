@@ -7,11 +7,13 @@ const ProjectDetails = ({ data }) => {
         <h2 className="text-xl font-bold  text-fifth">Project Details</h2>
 
         <h3 className="my-4   text-lg font-bold">Key Features</h3>
+        
 
-        {data?.map((item) => (
-          <div key={item?.id} className="text-gray-800">
+        
+     
+          <div key={data?.id} className="text-gray-800">
             <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc pl-5">
-              {item?.attributes?.keyFeatures
+              {data?.attributes?.keyFeatures
                 ?.split("\n")
                 .filter((feature) => feature.trim() !== "")
                 .map((feature) => (
@@ -23,10 +25,10 @@ const ProjectDetails = ({ data }) => {
             </ul>
             <div className="my-5 ">
               <h3 className="my-4 text-lg font-bold">Description</h3>
-              <p>{item?.attributes?.projectDescription}</p>
+              <p>{data?.attributes?.projectDescription}</p>
               <h3 className="my-4 text-lg font-bold">Groud Floor Details</h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc pl-5">
-                {item?.attributes?.groundFloorDetails
+                {data?.attributes?.groundFloorDetails
                   .split("\n")
                   .filter((detail) => detail.trim() !== "")
                   .map((detail) => (
@@ -39,7 +41,7 @@ const ProjectDetails = ({ data }) => {
             </div>
 
             <div className="mt-4 flex flex-wrap gap-1">
-              {item?.attributes?.keywords
+              {data?.attributes?.keywords
                 .split(",")
                 .filter((keywords) => keywords.trim() !== "")
                 .map((keywords) => (
@@ -53,7 +55,7 @@ const ProjectDetails = ({ data }) => {
                 ))}
             </div>
           </div>
-        ))}
+
       </div>
     </article>
   );

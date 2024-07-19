@@ -61,4 +61,19 @@ const getProperty = async () => {
   }
 };
 
-export { getLogo, getSlide, getProperty };
+const getSingleProperty = async (id) => {
+  try {
+    const data = await fetchData(
+      `/properties/${id}?populate=*`
+      // {
+      //   next: { tags: ["property"] },
+      // }
+    );
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching property:", error);
+    throw error;
+  }
+};
+
+export { getLogo, getSlide, getProperty, getSingleProperty };

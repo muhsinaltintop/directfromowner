@@ -15,8 +15,9 @@ const MainLead = () => {
             </h2>
 
             <p className="mt-4 text-gray-600">
-              Contact us for property investment. Reach out to list your
-              properties on our webpage.
+              Contact us for property investment. 
+              <span className="flex">UK: +447438214612  </span>
+              <span className="flex">TR: +90 532 2663453</span>
             </p>
 
             <Link

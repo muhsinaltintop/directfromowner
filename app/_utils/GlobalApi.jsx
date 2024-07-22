@@ -3,7 +3,7 @@ const BASE_URL = process.env.NEXT_PUBLIC_API_URL;
 
 const fetchData = async (endpoint, options = {}) => {
   const defaultOptions = {
-    cache: "no-store",
+    cache: "default", // 'no-store' yerine 'default' kullanmayı düşünebilirsiniz
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${API_KEY}`,
@@ -16,7 +16,9 @@ const fetchData = async (endpoint, options = {}) => {
   try {
     const res = await fetch(url, finalOptions);
     if (!res.ok) {
-      throw new Error(`Error: ${res.status} ${res.statusText}`);
+      // API'den dönen hata mesajını loglayın
+      const errorDetail = await res.text(); 
+      throw new Error(`Error: ${res.status} ${res.statusText} - ${errorDetail}`);
     }
     const data = await res.json();
     return data;
@@ -48,12 +50,7 @@ const getSlide = async () => {
 
 const getProperty = async () => {
   try {
-    const data = await fetchData(
-      "/properties?populate=*"
-      // {
-      //   next: { tags: ["property"] },
-      // }
-    );
+    const data = await fetchData("/properties?populate=*");
     return data?.data;
   } catch (error) {
     console.error("Error fetching property:", error);
@@ -63,15 +60,10 @@ const getProperty = async () => {
 
 const getSingleProperty = async (id) => {
   try {
-    const data = await fetchData(
-      `/properties/${id}?populate=*`
-      // {
-      //   next: { tags: ["property"] },
-      // }
-    );
+    const data = await fetchData(`/properties/${id}?populate=*`);
     return data?.data;
   } catch (error) {
-    console.error("Error fetching property:", error);
+    console.error("Error fetching single property:", error);
     throw error;
   }
 };

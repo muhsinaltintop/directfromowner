@@ -26,6 +26,9 @@ const ProjectDetails = ({ data }) => {
             <div className="my-5 ">
               <h3 className="my-4 text-lg font-bold">Description</h3>
               <p>{data?.attributes?.projectDescription}</p>
+              {data?.attributes?.groundFloorDetails ? (
+              <div>
+
               <h3 className="my-4 text-lg font-bold">Groud Floor Details</h3>
               <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4 list-disc pl-5">
                 {data?.attributes?.groundFloorDetails
@@ -38,6 +41,10 @@ const ProjectDetails = ({ data }) => {
                     </li>
                   ))}
               </ul>
+                  </div>
+
+              ): ("")}
+              
             </div>
 
             <div className="mt-4 flex flex-wrap gap-1">

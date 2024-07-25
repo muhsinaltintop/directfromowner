@@ -1,5 +1,6 @@
 import Link from "next/link";
 import React from "react";
+import ReactCountryFlag from "react-country-flag";
 import { FaWpforms } from "react-icons/fa";
 import { FaPhone } from "react-icons/fa";
 import { FaAt } from "react-icons/fa";
@@ -15,10 +16,37 @@ const MainLead = () => {
             </h2>
 
             <p className="mt-4 text-gray-600">
-              Contact us for property investment. 
-              <span className="flex">UK: +447438214612  </span>
-              <span className="flex">TR: +90 532 2663453</span>
+              Contact us for property investment.
             </p>
+              <p>
+             <span><ReactCountryFlag
+                countryCode="GB"
+                svg
+                cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/1x1/"
+                cdnSuffix="svg"
+                title="GB"
+                style={{
+                  marginRight: "10px",
+                  borderRadius: "50%"
+                }}
+            /></span>
+              +447438214612
+              </p>
+              <p>
+
+              <span><ReactCountryFlag
+                countryCode="TR"
+                svg
+                cdnUrl="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/3.4.3/flags/1x1/"
+                cdnSuffix="svg"
+                title="TR"
+                style={{
+                  marginRight: "10px",
+                  borderRadius: "50%",
+                }}
+            /></span>
+              +90 532 266 3463
+              </p>
 
             <Link
               href="/contact"

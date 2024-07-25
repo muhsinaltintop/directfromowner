@@ -7,7 +7,7 @@ import Footer from "./_components/Footer";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
-  title: "Direct From the Owner",
+  title: "Global Property",
   description: "Best way to trade properties, cars and others...",
 };
 

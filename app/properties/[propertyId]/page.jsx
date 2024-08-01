@@ -6,8 +6,6 @@ const page = async ({ params }) => {
   const id = params.propertyId;
   const data = await getSingleProperty(id);
   const propertyName = data?.attributes?.propertyName;
-
-  console.log(propertyName);
   
   return (
     <div className="">

@@ -3,6 +3,7 @@ import Link from "next/link";
 import React from "react";
 
 const Service = ({ title, detail, imageUrl }) => {
+  console.log("imageURL", imageUrl);
   let servicePath = title
     .toLowerCase() // Convert the entire string to lowercase
     .split(" ") // Split the string by spaces into an array of words
@@ -31,7 +32,7 @@ const Service = ({ title, detail, imageUrl }) => {
         />
 
         <Image
-          src={`/${servicePath}.png`}
+          src={`https://panel.theglobalproperty.co.uk${imageUrl}`}
           alt=""
           className="absolute inset-0 h-full w-full object-cover opacity-0 group-hover:opacity-100 inset-y-0"
           width="200"

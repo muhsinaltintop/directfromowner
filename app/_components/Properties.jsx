@@ -229,7 +229,7 @@ const Properties = async () => {
 
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
           
-          { data.map((property, index)=> {
+          {data.map((property, index)=> {
           return (<li key={index}>
             <Property data={property} />
           </li>)

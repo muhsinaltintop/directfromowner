@@ -89,4 +89,24 @@ const getMenu = async () => {
   }
 };
 
-export { getLogo, getSlide, getProperty, getSingleProperty, getService, getMenu };
+const getBlogs = async () => {
+  try {
+    const data = await fetchData(`/blogs/?populate=*`);
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching single property:", error);
+    throw error;
+  }
+};
+
+const getSingleBlog = async (blogTitle) => {
+  try {
+    const data = await fetchData(`/blogs?filters[title][$eqi]=${blogTitle}&populate=*`);
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching single property:", error);
+    throw error;
+  }
+};
+
+export { getLogo, getSlide, getProperty, getSingleProperty, getService, getMenu, getBlogs, getSingleBlog };

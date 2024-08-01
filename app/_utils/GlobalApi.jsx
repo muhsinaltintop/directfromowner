@@ -68,7 +68,7 @@ const getSingleProperty = async (id) => {
   }
 };
 
-const getService = async (id) => {
+const getService = async () => {
   try {
     const data = await fetchData(`/services/?populate=*`);
     return data?.data;

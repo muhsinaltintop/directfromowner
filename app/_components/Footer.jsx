@@ -150,7 +150,7 @@ const Footer = () => {
               <strong className="font-medium text-gray-900"> Pages </strong>
 
               <ul className="mt-6 space-y-1">
-                <li>
+                <li key="1">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="/aboutus"
@@ -159,7 +159,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                <li key="2">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="/our-services"
@@ -168,7 +168,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                <li key="3">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="/properties"
@@ -177,7 +177,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                <li key="4">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="/blog"
@@ -185,7 +185,7 @@ const Footer = () => {
                     Blog&News
                   </a>
                 </li>
-                <li>
+                <li key="5">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="/contact"
@@ -199,7 +199,7 @@ const Footer = () => {
               <strong className="font-medium text-gray-900"> Services </strong>
 
               <ul className="mt-6 space-y-1">
-                <li>
+                <li key="1">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="our-services#propertyBuyingConsultancy"
@@ -208,7 +208,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                <li key="2">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="our-services#propertyManagement"
@@ -217,7 +217,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                <li key="3">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="our-services#investmentConsultancy"
@@ -226,7 +226,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                <li key="4">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="our-services#renovationProjects"
@@ -240,7 +240,7 @@ const Footer = () => {
               <strong className="font-medium text-gray-900"> Support </strong>
 
               <ul className="mt-6 space-y-1">
-                <li>
+                <li key="1">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="/faq"
@@ -249,7 +249,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                {/* <li>
+                {/* <li key="1">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="#"
@@ -258,7 +258,7 @@ const Footer = () => {
                   </a>
                 </li>
 
-                <li>
+                <li key="1">
                   <a
                     className="text-gray-700 transition hover:text-gray-700/75"
                     href="#"

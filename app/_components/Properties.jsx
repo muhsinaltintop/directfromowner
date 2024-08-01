@@ -78,7 +78,7 @@ const Properties = async () => {
                     </header>
 
                     <ul className="space-y-1 border-t border-gray-200 p-4">
-                      <li>
+                      <li key="1">
                         <label
                           htmlFor="FilterInStock"
                           className="inline-flex items-center gap-2"
@@ -95,7 +95,7 @@ const Properties = async () => {
                         </label>
                       </li>
 
-                      <li>
+                      <li key="2">
                         <label
                           htmlFor="FilterPreOrder"
                           className="inline-flex items-center gap-2"
@@ -112,7 +112,7 @@ const Properties = async () => {
                         </label>
                       </li>
 
-                      <li>
+                      <li key="3">
                         <label
                           htmlFor="FilterOutOfStock"
                           className="inline-flex items-center gap-2"

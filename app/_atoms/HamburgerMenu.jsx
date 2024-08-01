@@ -11,7 +11,7 @@ const HamburgerMenu = () => {
       <div className="md:flex md:items-center md:gap-12">
         <nav aria-label="Global" className="hidden md:block">
           <ul className="flex items-center gap-6 text-sm">
-            <li>
+            <li key="1">
               <Link
                 className="text-primary text-lg  transition hover:text-gray-200"
                 href="/aboutus"
@@ -19,7 +19,7 @@ const HamburgerMenu = () => {
                 About
               </Link>
             </li>
-            <li>
+            <li key="2">
               <Link
                 className="text-primary text-lg transition hover:text-gray-200"
                 href="/our-services"
@@ -27,7 +27,7 @@ const HamburgerMenu = () => {
                 Services
               </Link>
             </li>
-            <li>
+            <li key="3">
               <Link
                 className="text-primary text-lg transition hover:text-gray-200"
                 href="/properties"
@@ -35,7 +35,7 @@ const HamburgerMenu = () => {
                 Properties
               </Link>
             </li>
-            <li>
+            <li key="4">
               <Link
                 className="text-primary text-lg transition hover:text-gray-200"
                 href="/why-uk"
@@ -43,7 +43,7 @@ const HamburgerMenu = () => {
                 Why UK?
               </Link>
             </li>
-            <li>
+            <li key="5">
               <Link
                 className="text-primary text-lg transition hover:text-gray-200"
                 href="/blog"
@@ -51,7 +51,7 @@ const HamburgerMenu = () => {
                 Blog & News
               </Link>
             </li>
-            <li>
+            <li key="6">
               <Link
                 className="text-primary text-lg transition hover:text-gray-200"
                 href="/contact"
@@ -72,7 +72,7 @@ const HamburgerMenu = () => {
         <div className="md:hidden">
           <nav aria-label="Global">
             <ul className="flex flex-col items-center gap-4 text-sm mt-2">
-              <li>
+              <li key="1">
                 <Link
                   className="text-primary text-lg  transition hover:text-gray-200"
                   href="/aboutus"
@@ -81,7 +81,7 @@ const HamburgerMenu = () => {
                   About
                 </Link>
               </li>
-              <li>
+              <li key="1">
                 <Link
                   className="text-primary text-lg transition hover:text-gray-200"
                   href="/our-services"
@@ -90,7 +90,7 @@ const HamburgerMenu = () => {
                   Services
                 </Link>
               </li>
-              <li>
+              <li key="1">
                 <Link
                   className="text-primary text-lg transition hover:text-gray-200"
                   href="/properties"
@@ -99,7 +99,7 @@ const HamburgerMenu = () => {
                   Properties
                 </Link>
               </li>
-              <li>
+              <li key="1">
                 <Link
                   className="text-primary text-lg transition hover:text-gray-200"
                   href="/blog"
@@ -108,7 +108,7 @@ const HamburgerMenu = () => {
                   Blog&News
                 </Link>
               </li>
-              <li>
+              <li key="1">
                 <Link
                   className="text-primary text-lg transition hover:text-gray-200"
                   href="/contact"

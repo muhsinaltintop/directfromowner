@@ -3,13 +3,13 @@ import React from "react";
 const SideMenu = () => {
   return (
     <ul className="flex flex-col space-y-2">
-      <li>
+      <li key="1">
         <strong className="block text-xs font-medium uppercase text-gray-400">
           Menu
         </strong>
 
         <ul className="mt-2 space-y-1">
-          <li>
+          <li key="1">
             <a
               href="#"
               className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
@@ -18,7 +18,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="2">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -27,7 +27,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="3">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -36,7 +36,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="4">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -45,7 +45,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="5">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -56,13 +56,13 @@ const SideMenu = () => {
         </ul>
       </li>
 
-      <li>
+      <li key="2">
         <strong className="block text-xs font-medium uppercase text-gray-400">
           Support
         </strong>
 
         <ul className="mt-2 space-y-1">
-          <li>
+          <li key="1">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -71,7 +71,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="2">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -80,7 +80,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="3">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -91,13 +91,13 @@ const SideMenu = () => {
         </ul>
       </li>
 
-      <li>
+      <li key="3">
         <strong className="block text-xs font-medium uppercase text-gray-400">
           Profile
         </strong>
 
         <ul className="mt-2 space-y-1">
-          <li>
+          <li key="1">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -106,7 +106,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="2">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -115,7 +115,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li>
+          <li key="3">
             <form action="#">
               <button
                 type="submit"

@@ -1,6 +1,9 @@
+import Link from "next/link";
 import React from "react";
+import { getMenu } from "../_utils/GlobalApi";
 
-const Footer = () => {
+const Footer = async() => {
+  const menuItems = await getMenu();
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
@@ -150,49 +153,17 @@ const Footer = () => {
               <strong className="font-medium text-gray-900"> Pages </strong>
 
               <ul className="mt-6 space-y-1">
-                <li key="1">
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/aboutus"
-                  >
-                    About
-                  </a>
-                </li>
+              {menuItems?.map((item, index)=> {
+            return (<li key={index}>
+              <Link
+                className="text-gray-700 transition hover:text-gray-700/75"
+                href={`/${item?.attributes?.menuLink}`}
+              >
+                {item?.attributes?.menuName}
+              </Link>
+            </li>)
 
-                <li key="2">
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/our-services"
-                  >
-                    Services
-                  </a>
-                </li>
-
-                <li key="3">
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/properties"
-                  >
-                    Properties
-                  </a>
-                </li>
-
-                <li key="4">
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/blog"
-                  >
-                    Blog&News
-                  </a>
-                </li>
-                <li key="5">
-                  <a
-                    className="text-gray-700 transition hover:text-gray-700/75"
-                    href="/contact"
-                  >
-                    Contact
-                  </a>
-                </li>
+            })}
               </ul>
             </div>
             <div>

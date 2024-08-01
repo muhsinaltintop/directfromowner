@@ -1,8 +1,11 @@
 import Link from "next/link";
 import Logo from "../_atoms/Logo";
-import HamburgerMenu from "../_atoms/HamburgerMenu";
+import Menu from "../_atoms/Menu";
+import { getMenu } from "../_utils/GlobalApi";
 
-const Header = () => {
+const Header = async () => {
+  const menuItems = await getMenu();
+  
   return (
     <header className="bg-fifth py-2">
       <div className="text-primary mx-auto max-w-screen-xl px-4 sm:px-6 lg:px-8">
@@ -14,7 +17,7 @@ const Header = () => {
             </Link>
           </div>
 
-          <HamburgerMenu />
+          <Menu menuItems={menuItems} />
         </div>
 
         

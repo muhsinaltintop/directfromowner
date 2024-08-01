@@ -68,4 +68,14 @@ const getSingleProperty = async (id) => {
   }
 };
 
-export { getLogo, getSlide, getProperty, getSingleProperty };
+const getService = async (id) => {
+  try {
+    const data = await fetchData(`/services/?populate=*`);
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching single property:", error);
+    throw error;
+  }
+};
+
+export { getLogo, getSlide, getProperty, getSingleProperty, getService };

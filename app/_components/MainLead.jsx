@@ -30,7 +30,7 @@ const MainLead = () => {
                   borderRadius: "50%"
                 }}
             /></span>
-              +447438214612
+              +44 7857 399 777
               </p>
               <p>
 
@@ -59,7 +59,7 @@ const MainLead = () => {
           <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 sm:gap-1">
             <Link
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="tel:+447438214612"
+              href="tel:+447857399777"
             >
               <span className="inline-block rounded-lg bg-primary p-0 sm:p-3">
                 <FaPhone className="size-5 sm:size-10" />

@@ -1,5 +1,6 @@
 'use client'
 import { useRef } from 'react';
+import ContactDetails from './ContactDetails';
 
 const Contact = () => {
     const checkboxRef = useRef(null);
@@ -29,7 +30,7 @@ const Contact = () => {
                     placeholder="Name"
                     type="name"
                     id="name"
-                  />
+                    />
                   </div>
                
                 <div>
@@ -53,7 +54,7 @@ const Contact = () => {
                     placeholder="E-mail Address"
                     type="email"
                     id="email"
-                  />
+                    />
                 </div>
                 </div>
               </form>
@@ -78,7 +79,7 @@ const Contact = () => {
                 id="permission"
                 ref={checkboxRef}
                 className="h-5 w-5 relative rounded border-gray-300 bg-white shadow-sm mr-2"
-              />
+                />
               <label htmlFor="permission" className="text-center font-light inline-block text-xs text-gray-500 hover:cursor-pointer">
                 By filling out this form, you are giving permission for a consultant from the UK Property Analysis and Consultancy Firm to contact you via phone, SMS, or email. The information you have entered into the form will not be shared with third parties.
               </label>
@@ -96,6 +97,7 @@ const Contact = () => {
           </div>
         </div>
       </div>
+    <ContactDetails/>
     </section>
   );
 };

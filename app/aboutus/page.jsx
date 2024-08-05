@@ -140,7 +140,7 @@ const page = () => {
               <h2 className="text-lg font-bold">Experience and Expertise</h2>
 
               <p className="mt-1 text-sm text-gray-900">
-                OWith our extensive experience and expert team, we guarantee the
+              With our extensive experience and expert team, we guarantee the
                 best service at all times.
               </p>
             </div>

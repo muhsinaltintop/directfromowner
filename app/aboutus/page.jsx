@@ -8,6 +8,7 @@ import { FaPersonBurst } from "react-icons/fa6";
 import { BsTransparency } from "react-icons/bs";
 import { GrContact } from "react-icons/gr";
 import Contact from "../_components/Contact";
+import Link from "next/link";
 
 const page = () => {
   return (
@@ -182,7 +183,7 @@ const page = () => {
           <h2 className="text-2xl font-bold sm:text-3xl">Contact Us</h2>
         </div>
 
-        <div className="mt-4 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+        <div className="mt-4 gap-8 md:mt-8 md:grid-cols-2 md:gap-6 lg:grid-cols-3">
           <div className="flex items-start gap-4">
             <span className="shrink-0 rounded-lg bg-fifth text-primary p-4">
               <GrContact />
@@ -191,13 +192,10 @@ const page = () => {
             <div>
               <p className="mt-1 text-large text-gray-900">
                 To reach us and learn more about our services, you can fill out
-                our contact form. Global Property Management is always by your
+                our <span className="text-blue-700"><Link href={"/contact"}> contact form</Link></span>. Global Property Management is always by your
                 side for all your real estate needs!
               </p>
             </div>
-          </div>
-          <div className="mt-8">
-            <Contact />
           </div>
         </div>
       </div>

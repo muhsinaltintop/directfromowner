@@ -137,11 +137,7 @@ const Contact = () => {
                 Send
               </button>
             </div>
-              </form>
-           
-
-
-            
+              </form>         
           </div>
         </div>
       </div>

@@ -74,7 +74,7 @@ const MainLead = () => {
 
             <Link
               className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-              href="mailto:metincelik75@gmail.com"
+              href="mailto:75@gmail.com"
             >
               <span className="inline-block rounded-lg bg-primary p-0 sm:p-3">
                 <FaAt className="size-5 sm:size-10" />

@@ -5,23 +5,29 @@ import { RxHamburgerMenu } from "react-icons/rx";
 
 const Menu = ({menuItems}) => {
   const [isOpen, setIsOpen] = useState(false);
+  
+  // menuItems listesini sıralama
+  const sortedMenuItems = menuItems?.sort((a, b) => a.attributes.index - b.attributes.index);
+
   return (
     <div>
       <div className="md:flex md:items-center md:gap-12">
         <nav aria-label="Global" className="hidden md:block">
           <ul className="flex items-center gap-6 text-sm">
-            {menuItems?.map((item, index)=> {
-            return (<li key={index}>
-              <Link
-                className="text-primary text-lg  transition hover:text-gray-200"
-                href={`/${item?.attributes?.menuLink}`}
-              >
-                {item?.attributes?.menuName}
-              </Link>
-            </li>)
-
+            {sortedMenuItems?.map((item, index) => {
+              return (
+                <li key={index}>
+                  <div>
+                    <Link
+                      className="text-primary text-lg transition hover:text-gray-200"
+                      href={`/${item?.attributes?.menuLink}`}
+                    >
+                      {item?.attributes?.menuName}
+                    </Link>
+                  </div>
+                </li>
+              );
             })}
-          
           </ul>
         </nav>
 
@@ -35,17 +41,18 @@ const Menu = ({menuItems}) => {
         <div className="md:hidden">
           <nav aria-label="Global">
             <ul className="flex flex-col items-center gap-4 text-sm mt-2">
-            {menuItems?.map((item, index)=> {
-            return (<li key={index}>
-              <Link
-                className="text-primary text-lg  transition hover:text-gray-200"
-                href={`/${item?.attributes?.menuLink}`}
-              >
-                {item?.attributes?.menuName}
-              </Link>
-            </li>)
-
-            })}
+              {sortedMenuItems?.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <Link
+                      className="text-primary text-lg transition hover:text-gray-200"
+                      href={`/${item?.attributes?.menuLink}`}
+                    >
+                      {item?.attributes?.menuName}
+                    </Link>
+                  </li>
+                );
+              })}
             </ul>
           </nav>
         </div>

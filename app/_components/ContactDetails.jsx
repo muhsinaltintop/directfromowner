@@ -19,7 +19,7 @@ const ContactDetails = () => {
 
           <div className="rounded-lg bg-white p-8 shadow-lg lg:col-span-3 lg:p-12">
             <div className="mt-4">
-              <div className="flex flex-col lg:flex-row gap-8 lg:gap-4">
+              <div className="flex flex-col lg:flex-row gap-8 lg:gap-4 justify-around">
                 <div className="flex items-center gap-4">
                   <span className="inline-block rounded-lg bg-primary p-3">
                     <FaPhone className="text-xl sm:text-2xl" />
@@ -70,17 +70,6 @@ const ContactDetails = () => {
                     href="mailto:property@theglobalproperty.co.uk"
                   >
                     property@theglobalproperty.co.uk
-                  </Link>
-                </div>
-                <div className="flex items-center gap-4">
-                  <span className="inline-block rounded-lg bg-primary p-3">
-                    <FaMapMarkerAlt className="text-xl sm:text-2xl" />
-                  </span>
-                  <Link
-                    className="block rounded-xl border border-gray-100 p-4 shadow-sm hover:border-gray-200 hover:ring-1 hover:ring-gray-200 focus:outline-none focus:ring"
-                    href="https://maps.app.goo.gl/u8HSBYkMs5ySB9zv6" target='_blank'
-                  >
-                    21 Atherstone Close, LE2 4SP Leicester/UK
                   </Link>
                 </div>
               </div>

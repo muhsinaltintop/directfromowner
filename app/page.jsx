@@ -10,8 +10,8 @@ export default function Home() {
   return (
     <main className="w-full">
       <Slider />
-      <div className="text-center justify-around">
-      <h2 className="font-bold text-fifth text-2xl my-4">Partners</h2>
+      <div className="text-center justify-around mb-20">
+      <h2 className="font-bold text-fifth text-2xl my-8">Partners</h2>
         <Partners/>
       </div>
       <div className="w-9/12 my-4 items-center mx-auto">

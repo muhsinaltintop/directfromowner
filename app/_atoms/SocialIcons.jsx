@@ -1,3 +1,4 @@
+"use client"
 import {
   FacebookIcon,
   InstagramIcon,
@@ -5,25 +6,27 @@ import {
   PinterestIcon,
   TwitterIcon,
 } from "next-share";
+import Link from "next/link";
 import React from "react";
+import { FaYoutube } from "react-icons/fa";
 
 const SocialIcons = () => {
   return (
-    <div className="flex">
-      <div>
+    <div className="flex mt-6">
+      <div className="mr-4">
+        <Link href="https://www.facebook.com/ingiliz.antikalari">
         <FacebookIcon size={32} round />
+        </Link>
       </div>
-      <div>
+      <div className="mr-4">
+        <Link href="https://www.instagram.com/ingiliz.antikalari.emlak">
         <InstagramIcon size={32} round />
+        </Link>
       </div>
-      <div>
-        <PinterestIcon size={32} round />
-      </div>
-      <div>
-        <LinkedinIcon size={32} round />
-      </div>
-      <div>
-        <TwitterIcon size={32} round />
+      <div className="mr-4 text-red-600">
+        <Link href="https://www.youtube.com/@TheGlobalPropertyUK">
+        <FaYoutube size={32} round />
+        </Link>
       </div>
     </div>
   );

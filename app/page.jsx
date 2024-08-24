@@ -2,7 +2,7 @@ import Slider from "./_components/Slider";
 import Banner from "./_components/Banner";
 import MainLead from "./_components/MainLead";
 import Services from "./_components/Services";
-import Properties from "./_components/Properties";
+import PropertiesContainer from "./_components/PropertiesContainer";
 import Blog from "./blog/page";
 import Partners from "./_components/Partners";
 
@@ -22,7 +22,7 @@ export default function Home() {
         <Services />
       </div>
       <div>
-        <Properties />
+        <PropertiesContainer />
       </div>
       <div className="w-9/12 my-4 items-center mx-auto">
         <MainLead />

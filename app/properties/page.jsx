@@ -1,5 +1,5 @@
 import React from "react";
-import Properties from "../_components/Properties";
+import PropertiesContainer from "../_components/PropertiesContainer";
 import { getProperty } from "../_utils/GlobalApi";
 
 const page = async () => {
@@ -7,7 +7,7 @@ const page = async () => {
 
   return (
     <div>
-      <Properties propertyData={data} />
+      <PropertiesContainer propertyData={data} />
     </div>
   );
 };

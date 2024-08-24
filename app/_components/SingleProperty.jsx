@@ -14,8 +14,6 @@ const SingleProperty = ({ id, data }) => {
       <ImageSlider propertyImage={propertyImage} />
       <SimpleFeatures id={id} data={data} />
       <ProjectDetails data={data} />
-
-      
     </div>
   );
 };

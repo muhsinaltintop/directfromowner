@@ -9,7 +9,7 @@ const SideMenu = () => {
         </strong>
 
         <ul className="mt-2 space-y-1">
-          <li key="1">
+          <li key="11">
             <a
               href="#"
               className="block rounded-lg bg-gray-100 px-4 py-2 text-sm font-medium text-gray-700"
@@ -18,7 +18,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="2">
+          <li key="12">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -27,7 +27,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="3">
+          <li key="13">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -36,7 +36,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="4">
+          <li key="14">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -45,7 +45,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="5">
+          <li key="15">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -62,7 +62,7 @@ const SideMenu = () => {
         </strong>
 
         <ul className="mt-2 space-y-1">
-          <li key="1">
+          <li key="21">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -71,7 +71,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="2">
+          <li key="22">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -80,7 +80,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="3">
+          <li key="23">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -97,7 +97,7 @@ const SideMenu = () => {
         </strong>
 
         <ul className="mt-2 space-y-1">
-          <li key="1">
+          <li key="31">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -106,7 +106,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="2">
+          <li key="32">
             <a
               href="#"
               className="block rounded-lg px-4 py-2 text-sm font-medium text-gray-500 hover:bg-gray-100 hover:text-gray-700"
@@ -115,7 +115,7 @@ const SideMenu = () => {
             </a>
           </li>
 
-          <li key="3">
+          <li key="33">
             <form action="#">
               <button
                 type="submit"

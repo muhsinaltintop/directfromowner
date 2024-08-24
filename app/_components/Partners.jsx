@@ -9,9 +9,9 @@ const Partners = async () => {
     <div className='flex justify-around'>
 
         {data.map((partners) => (
-        
-          partners.attributes.PartnerLogo.data.map((partner, i)=> {
-            return <Image key={i} alt='image' src={`https://panel.theglobalproperty.co.uk${partner.attributes.url}`}
+          
+          partners.attributes.PartnerLogo.data.map((partner, index)=> {
+            return <Image key={index} alt='image' src={`https://panel.theglobalproperty.co.uk${partner.attributes.url}`}
             width={200} height={300}/>            
           })           
         )

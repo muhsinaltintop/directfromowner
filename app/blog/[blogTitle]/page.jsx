@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { slugToTitle } from "../../_utils/createSlugFunction";
-import { getSingleBlog } from "@/app/_utils/GlobalApi";
+import { getSingleBlog } from "../../_utils/GlobalApi";
 
 
 const BlogDetails = async ({ params }) => {

@@ -1,6 +1,6 @@
-import Breadcrumb from "@/app/_atoms/Breadcrumb";
-import SingleProperty from "@/app/_components/SingleProperty";
-import { getSingleProperty } from "@/app/_utils/GlobalApi";
+import Breadcrumb from "../../_atoms/Breadcrumb";
+import SingleProperty from "../../_components/SingleProperty"
+import { getSingleProperty } from "../../_utils/GlobalApi";
 
 const page = async ({ params }) => {
   const id = params.propertyId;

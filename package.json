@@ -12,17 +12,20 @@
     "@emotion/react": "^11.11.4",
     "@emotion/styled": "^11.11.5",
     "@mui/material": "^5.15.20",
+    "@strapi/blocks-react-renderer": "^1.0.1",
     "next": "14.2.4",
     "next-share": "^0.27.0",
-    "react": "^18",
+    "react": "^18.3.1",
     "react-country-flag": "^3.1.0",
-    "react-dom": "^18",
+    "react-dom": "^18.3.1",
     "react-icons": "^5.2.1",
     "swr": "^2.2.5"
   },
   "devDependencies": {
+    "@types/node": "22.5.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.4",
+    "husky": "^9.1.5",
     "postcss": "^8",
     "tailwindcss": "^3.4.1"
   }

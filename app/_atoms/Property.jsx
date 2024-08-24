@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import { FaBath, FaBed } from "react-icons/fa";
+import { FaMapLocationDot } from "react-icons/fa6";
 
 const Property = ({ data }) => {
   return (
@@ -18,14 +19,17 @@ const Property = ({ data }) => {
               width="450"
             />
             <div className="relative border border-gray-100 bg-white p-6">
+              <div className="flex items-center">
+
               <span className="whitespace-nowrap bg-fifth px-3 py-1.5 text-xs font-medium text-primary">
                 {data?.attributes?.isItReady
                   ? "Ready"
                   : data?.attributes?.willBeReadyOn}
               </span>
-              <span className="whitespace-nowrap bg-primary px-3 py-1.5 text-xs font-medium text-fifth ml-4">
-               Location: {data?.attributes?.city}
+              <span className="flex items-center whitespace-nowrap bg-primary px-3 py-1.5 text-xs font-medium text-fifth ml-4">
+              <FaMapLocationDot size={18} className="mr-1" /> {data?.attributes?.city}
               </span>
+              </div>
 
               <h3 className="mt-4 text-lg font-medium text-gray-900">
                 {data?.attributes?.address}

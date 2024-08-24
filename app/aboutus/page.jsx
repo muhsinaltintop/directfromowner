@@ -9,6 +9,7 @@ import { BsTransparency } from "react-icons/bs";
 import { GrContact } from "react-icons/gr";
 import Contact from "../_components/Contact";
 import Link from "next/link";
+import Image from "next/image";
 
 const page = () => {
   return (
@@ -66,6 +67,144 @@ const page = () => {
           </div>
         </div>
       </div>
+      <div className="max-w-screen-xl mx-auto py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4">
+        <div className="max-w-xl" id="ourServices">
+          <h2 className="text-2xl font-bold sm:text-3xl">Founders</h2>
+        </div>
+
+        <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+          <div className="flex items-start gap-4">
+            <span>
+              <Image src="/founders-1.jpg" width={400} height={400} alt="founders" className="rounded-lg"/>
+            </span>
+          </div>
+
+          <div className="flex items-end gap-4">
+            <div>
+              
+
+              <p className="mt-1 text-sm text-gray-900 text-justify">
+              Dr. Metin and Ozlem Celik, the founders of Alesta Business Club(www.alesta.uk), have been teaching at university and guiding investors from all over the world in the UK for many years. During their time in Turkey, they provided consultancy services to many senior government officials.
+              </p>
+            </div>
+          </div>
+
+          
+        </div>
+
+
+        {/* Burdan öncesi */}
+        <div className="founders">
+          <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+            <div className="flex items-start gap-4">
+              <span className="">
+                <Image src="/foto-1.jpg" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-2.jpg" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-3.png" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+          </div>
+          <div className="mt-4 text-gray-900 text-justify">
+            <p>Dr. Metin and Ozlem Celik supported the branding processes of 52 cities in Turkey&apos;s tourism sector, helping attract tens of millions of tourists to these cities. Over their 20-year career in Turkey, they provided consultancy to various key figures, including the Minister of Culture and Tourism, 42 governors and mayors, as well as 14 development agencies and regional development administrations.</p>
+          </div>       
+        </div>
+        <div className="founders">
+          <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+            <div className="flex items-start gap-4">
+              <span className="">
+                <Image src="/foto-4.png" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-5.jpg" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-6.jpg" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+          </div>
+          <div className="mt-4 text-gray-900 text-justify">
+            <p>The Celik couple, who have developed projects for Turkey&apos;s advancement in collaboration with institutions such as TURSAB, also contributed to the branding processes of private companies like BIM, DOĞTAŞ, Türk Telekom, İstikbal, and Ülker through the advertising agency they established. (www.globalbrandinglondon.com)</p>
+          </div>       
+        </div>
+        <div className="founders">
+          <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+            <div className="flex items-start gap-4">
+              <span className="">
+                <Image src="/foto-7.png" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-8.jpg" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-9.png" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+          </div>
+          <div className="mt-4 text-gray-900 text-justify">
+            <p>Dr. Metin and Özlem Çelik have supported numerous government institutions and private companies in Turkey with their hard work and expertise. After relocating to the UK, they founded The Global Property Real Estate Investment Consultancy to offer Turkish investors real estate opportunities, particularly in the UK and Dubai, as well as other parts of the world.</p>
+          </div>       
+        </div>
+        <div className="founders">
+          <div className="grid grid-cols-1 gap-8 md:mt-16 md:grid-cols-2 md:gap-12 lg:grid-cols-3">
+            <div className="flex items-start gap-4">
+              <span className="">
+                <Image src="/foto-10.png" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-11.jpg" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+
+            <div className="flex items-start gap-4">
+            <span className="">
+                <Image src="/foto-12.png" width={400} height={400} alt="image-1" className="rounded-lg"/>
+              </span>
+
+              
+            </div>
+          </div>  
+        </div>
+      </div>
+
       <div className="max-w-screen-xl mx-auto py-8 sm:px-6 sm:py-12 lg:px-8 lg:py-4">
         <div className="max-w-xl" id="ourServices">
           <h2 className="text-2xl font-bold sm:text-3xl">Our Services</h2>

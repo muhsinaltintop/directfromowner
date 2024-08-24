@@ -25,7 +25,7 @@ const SocialIcons = () => {
       </div>
       <div className="mr-4 text-red-600">
         <Link href="https://www.youtube.com/@TheGlobalPropertyUK">
-        <FaYoutube size={32} round />
+        <FaYoutube size={32} />
         </Link>
       </div>
     </div>

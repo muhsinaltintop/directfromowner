@@ -2,9 +2,11 @@
 import { useRef } from 'react';
 import ContactDetails from './ContactDetails';
 import { useState } from "react";
+import { useRouter } from 'next/navigation'; // useRouter kullanımı
 import { createInquri } from "../_utils/GlobalApi";
 
 const Contact = () => {
+    const router = useRouter(); // useRouter kancasını tanımla
     const checkboxRef = useRef(null);
     const [formData, setFormData] = useState({
       name: "",
@@ -31,6 +33,7 @@ const Contact = () => {
       try {
         const createdInquri = await createInquri({ data: formData });
         setSuccess("Enquiry created successfully!");
+        router.push('/thank-you'); // Başarılı gönderimden sonra yönlendirme
       } catch (error) {
         setError("Error creating enquiry.");
       } finally {

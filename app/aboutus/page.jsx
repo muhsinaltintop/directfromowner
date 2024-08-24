@@ -60,8 +60,7 @@ const page = () => {
                 services. By combining technology and expertise, we aim to
                 provide our clients with the most modern and practical
                 solutions, not just in the UK and Turkey but on an international
-                scale. We strive to be a reliable partner in the global real
-                estate market by prioritising customer satisfaction.
+                scale.
               </p>
             </div>
           </div>

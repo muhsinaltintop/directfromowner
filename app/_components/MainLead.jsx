@@ -45,7 +45,7 @@ const MainLead = () => {
                   borderRadius: "50%",
                 }}
             /></span>
-              +90 532 266 3463
+              +90 532 266 3463 (WhatsApp)
               </p>
 
             <Link

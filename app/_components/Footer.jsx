@@ -8,7 +8,8 @@ const Footer = async() => {
   return (
     <footer className="bg-white">
       <div className="mx-auto max-w-screen-xl px-4 pb-8 pt-16 sm:px-6 lg:px-8">
-        <div className="mx-auto max-w-md">
+        {/* Bu forma geri döneceğiz */}
+        {/* <div className="mx-auto max-w-md">
           <strong className="block text-center text-xl font-bold text-gray-900 sm:text-3xl">
             Want us to email you with the latest real estate news?
           </strong>
@@ -31,7 +32,7 @@ const Footer = async() => {
               </button>
             </div>
           </form>
-        </div>
+        </div> */}
 
         <div className="mt-16 grid grid-cols-1 gap-8 lg:grid-cols-2 lg:gap-32">
           <div className="mx-auto max-w-sm lg:max-w-none">

@@ -133,6 +133,7 @@ const Properties = ({ initialData }) => {
                                 type="checkbox"
                                 id={`Filter${city}`}
                                 value={city}
+                                checked={selectedLocations.includes(city)}
                                 onChange={handleLocationChange}
                                 className="size-5 rounded border-gray-300"
                               />

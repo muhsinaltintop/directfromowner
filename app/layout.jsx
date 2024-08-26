@@ -2,18 +2,19 @@ import { Inter } from "next/font/google";
 import "./globals.css";
 import Header from "./_components/Header";
 import Footer from "./_components/Footer";
+import  Head  from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata = {
   title: "Global Property",
-  description: "Best way to trade properties, cars and others...",
+  description: "UK Property Investment Experts",
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <head><link rel="icon" sizes="32x32" href="/icon.png"/></head>
+      <Head><link rel="icon" sizes="32x32" href="/favicon.ico"/></Head>
       <body className={inter.className}>
         <Header />
         <div className="flex">

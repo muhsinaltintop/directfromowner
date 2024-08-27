@@ -17,7 +17,7 @@ export const metadata = {
     images: [
       {
         url: "https://panel.theglobalproperty.co.uk/uploads/icon_9ba4bcda9c.png",
-        width: 800,
+        width: 600,
         height: 600,
         alt: "Global Property Logo",
       }

@@ -54,7 +54,7 @@ const SimpleFeatures = ({ link, data }) => {
                 <div>
                   <h3>
                     <span key={data?.id} className="font-bold">
-                      £ {new Intl.NumberFormat('de-DE').format(data?.attributes?.price)}
+                      £ {new Intl.NumberFormat('en').format(data?.attributes?.price)}
                     </span>
                   </h3>
                 </div>

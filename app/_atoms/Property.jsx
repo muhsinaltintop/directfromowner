@@ -36,7 +36,7 @@ const Property = ({ data }) => {
               </h3>
 
               <p className="mt-1.5 text-sm text-gray-700">
-                £ {new Intl.NumberFormat('de-DE').format(data?.attributes?.price)}
+                £ {new Intl.NumberFormat('en').format(data?.attributes?.price)}
               </p>
              <div className="flex gap-2 mt-2">
               <div className="flex items-center gap-2">

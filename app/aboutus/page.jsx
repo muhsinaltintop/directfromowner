@@ -7,7 +7,6 @@ import { GrUserExpert } from "react-icons/gr";
 import { FaPersonBurst } from "react-icons/fa6";
 import { BsTransparency } from "react-icons/bs";
 import { GrContact } from "react-icons/gr";
-import Contact from "../_components/Contact";
 import Link from "next/link";
 import Image from "next/image";
 

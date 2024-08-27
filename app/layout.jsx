@@ -16,7 +16,7 @@ export const metadata = {
     url: "https://theglobalproperty.co.uk/",
     images: [
       {
-        url: "https://panel.theglobalproperty.co.uk/uploads/icon_9ba4bcda9c.png",
+        url: "https://panel.theglobalproperty.co.uk/uploads/icon_579502c12f.png",
         width: 600,
         height: 600,
         alt: "Global Property Logo",
@@ -28,7 +28,7 @@ export const metadata = {
     card: "summary_large_image",
     title: "Global Property: UK Property Investment Experts",
     description: "We provide high-performance property investments in the UK, offering end-to-end support, from financial analysis to portfolio building, tailored to client needs.",
-    images: ["https://panel.theglobalproperty.co.uk/uploads/icon_9ba4bcda9c.png"],
+    images: ["https://panel.theglobalproperty.co.uk/uploads/icon_579502c12f.png"],
   },
 };
 

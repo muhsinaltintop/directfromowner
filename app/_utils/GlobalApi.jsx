@@ -70,7 +70,7 @@ const getSingleProperty = async (id) => {
 
 const getService = async () => {
   try {
-    const data = await fetchData(`/services/?populate=*`);
+    const data = await fetchData(`/services?populate=*`);
     return data?.data;
   } catch (error) {
     console.error("Error fetching single property:", error);
@@ -81,7 +81,7 @@ const getService = async () => {
 
 const getMenu = async () => {
   try {
-    const data = await fetchData(`/menus/?populate=*`);
+    const data = await fetchData(`/menus?populate=*`);
     return data?.data;
   } catch (error) {
     console.error("Error fetching single property:", error);
@@ -91,7 +91,7 @@ const getMenu = async () => {
 
 const getBlogs = async () => {
   try {
-    const data = await fetchData(`/blogs/?populate=*`);
+    const data = await fetchData(`/blogs?populate=*`);
     return data?.data;
   } catch (error) {
     console.error("Error fetching single property:", error);

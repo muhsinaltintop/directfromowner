@@ -82,7 +82,7 @@ const SimpleFeatures = ({ link, data }) => {
                 </span>
 
                 <div>
-                  <h2 className="text-lg font-bold">Constrution Year</h2>
+                  <h2 className="text-lg font-bold">Construction Year</h2>
 
                   <p className="mt-1 text-sm text-black">
                     {data?.attributes?.constructionYear}

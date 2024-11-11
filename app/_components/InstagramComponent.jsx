@@ -1,23 +1,21 @@
 
 import React from 'react'
 import { getInstagramPhoto } from '../_utils/GlobalApi';
-import Image from 'next/image';
+import InstagramRenderer from '../_atoms/InstagramRenderer'
 
 const InstagramComponent = async () => {
     const data = await getInstagramPhoto();
   return (
-    <div className='flex justify-around'>
+    <div className='text-center'>
 
-        {data.map((photo) => (
-          
-          photo.attributes.image.data.map((partner, index)=> {
-            return <Image key={index} alt='image' src={`https://panel.theglobalproperty.co.uk${partner.attributes.url}`}
-            width={200} height={300}/>            
-          })           
-        )
-        )}
+        <h2 className="text-xl font-bold text-gray-900 sm:text-3xl my-4 mb-10">
+          Property Posts
+        </h2>
+    <div className='grid grid-cols-4 justify-around'>
 
+        <InstagramRenderer data={data}/>
         
+    </div>
     </div>
   )
 }

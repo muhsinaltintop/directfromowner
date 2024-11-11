@@ -32,7 +32,7 @@ export default function Home() {
         <Blog />
       </div>
       <div>
-        {/* <InstagramComponent/> */}
+        <InstagramComponent/>
       </div>
     </main>
   );

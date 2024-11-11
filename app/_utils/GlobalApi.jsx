@@ -119,6 +119,17 @@ const getPartners = async () => {
   }
 };
 
+const getInstagramPhoto = async () => {
+  try {
+    const data = await fetchData(`/instagrams?populate=*`);
+    return data?.data;
+  } catch (error) {
+    console.error("Error fetching single property:", error);
+    throw error;
+  }
+};
+
+
 const postData = async (endpoint, data, options = {}) => {
   const defaultOptions = {
     method: "POST",
@@ -149,4 +160,4 @@ const createInquri = async (inquriData) => {
   return data.data;
 };
 
-export { getLogo, getSlide, getProperty, getSingleProperty, getService, getMenu, getBlogs, getSingleBlog, createInquri, getPartners };
+export { getLogo, getSlide, getProperty, getSingleProperty, getService, getMenu, getBlogs, getSingleBlog, createInquri, getPartners, getInstagramPhoto };

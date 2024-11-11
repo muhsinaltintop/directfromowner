@@ -5,6 +5,7 @@ import Services from "./_components/Services";
 import PropertiesContainer from "./_components/PropertiesContainer";
 import Blog from "./blog/page";
 import Partners from "./_components/Partners";
+import InstagramComponent from "./_components/InstagramComponent"
 
 export default function Home() {
   return (
@@ -29,6 +30,9 @@ export default function Home() {
       </div>
       <div>
         <Blog />
+      </div>
+      <div>
+        {/* <InstagramComponent/> */}
       </div>
     </main>
   );

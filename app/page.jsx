@@ -25,14 +25,14 @@ export default function Home() {
       <div>
         <PropertiesContainer />
       </div>
-      <div className="w-9/12 my-4 items-center mx-auto">
-        <MainLead />
-      </div>
       <div>
         <Blog />
       </div>
       <div>
         <InstagramComponent/>
+      </div>
+      <div className="w-9/12 my-4 items-center mx-auto">
+        <MainLead />
       </div>
     </main>
   );

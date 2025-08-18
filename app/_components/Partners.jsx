@@ -6,19 +6,24 @@ import Image from 'next/image';
 const Partners = async () => {
     const data = await getPartners();
   return (
-    <div className='flex justify-around'>
+    <div className="grid grid-cols-5 gap-4 place-items-center">
+  {data.map((partners) =>
+    partners.attributes.PartnerLogo.data.map((partner, index) => {
+      return (
+        <div key={index} className="flex items-center justify-center">
+          <Image
+            alt="image"
+            src={`https://panel.theglobalproperty.co.uk${partner.attributes.url}`}
+            width={100}
+            height={150}
+          />
+        </div>
+      );
+    })
+  )}
+</div>
 
-        {data.map((partners) => (
-          
-          partners.attributes.PartnerLogo.data.map((partner, index)=> {
-            return <Image key={index} alt='image' src={`https://panel.theglobalproperty.co.uk${partner.attributes.url}`}
-            width={200} height={300}/>            
-          })           
-        )
-        )}
 
-        
-    </div>
   )
 }
 

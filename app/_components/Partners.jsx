@@ -6,7 +6,7 @@ import Image from 'next/image';
 const Partners = async () => {
     const data = await getPartners();
   return (
-    <div className="grid grid-cols-5 gap-4 place-items-center">
+    <div className="grid grid-cols-5 gap-1 place-items-center">
   {data.map((partners) =>
     partners.attributes.PartnerLogo.data.map((partner, index) => {
       return (
@@ -14,8 +14,8 @@ const Partners = async () => {
           <Image
             alt="image"
             src={`https://panel.theglobalproperty.co.uk${partner.attributes.url}`}
-            width={100}
-            height={150}
+            width={300}
+            height={300}
           />
         </div>
       );

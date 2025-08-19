@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState, useEffect, useRef } from "react";
 import Property from "../_atoms/Property";
 
@@ -8,19 +8,26 @@ const Properties = ({ initialData }) => {
   const filterRef = useRef(null);
 
   // Extract unique cities from initialData
-  const uniqueCities = Array.from(new Set(initialData.map(property => property?.attributes?.city)));
+  const uniqueCities = Array.from(
+    new Set(initialData.map((property) => property?.attributes?.city))
+  );
 
   // Filter data based on selected locations
-  const filteredData = selectedLocations.length > 0 
-    ? initialData.filter(property => selectedLocations.includes(property?.attributes?.city))
-    : initialData;
+  const filteredData =
+    selectedLocations.length > 0
+      ? initialData.filter((property) =>
+          selectedLocations.includes(property?.attributes?.city)
+        )
+      : initialData;
 
   const handleLocationChange = (event) => {
     const { value, checked } = event.target;
     if (checked) {
       setSelectedLocations([...selectedLocations, value]);
     } else {
-      setSelectedLocations(selectedLocations.filter(location => location !== value));
+      setSelectedLocations(
+        selectedLocations.filter((location) => location !== value)
+      );
     }
   };
 
@@ -52,18 +59,21 @@ const Properties = ({ initialData }) => {
               </h2>
 
               <p className="mt-4 max-w-md text-gray-500">
-                Let&apos;s select the most profitable and suitable investment for
-                you from our portfolio.
+                Let&apos;s select the most profitable and suitable investment
+                for you from our portfolio.
               </p>
             </header>
 
             <div className="mt-8 sm:flex sm:items-center sm:justify-between">
               <div className="block sm:hidden">
-                <button 
+                <button
                   className="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
                   onClick={handleFilterToggle}
                 >
-                  <span className="text-sm font-medium"> Filters & Sorting </span>
+                  <span className="text-sm font-medium">
+                    {" "}
+                    Filters & Sorting{" "}
+                  </span>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -88,7 +98,11 @@ const Properties = ({ initialData }) => {
                     className="flex cursor-pointer items-center gap-2 border-b border-gray-400 pb-1 text-gray-900 transition hover:border-gray-600"
                   >
                     <span className="text-sm font-medium">Location</span>
-                    <span className={`transition ${isFilterOpen ? '-rotate-180' : ''}`}>
+                    <span
+                      className={`transition ${
+                        isFilterOpen ? "-rotate-180" : ""
+                      }`}
+                    >
                       <svg
                         xmlns="http://www.w3.org/2000/svg"
                         fill="none"
@@ -107,7 +121,10 @@ const Properties = ({ initialData }) => {
                   </button>
 
                   {isFilterOpen && (
-                    <div ref={filterRef} className="absolute z-50 mt-2 w-96 rounded border border-gray-200 bg-white">
+                    <div
+                      ref={filterRef}
+                      className="absolute z-50 mt-2 w-96 rounded border border-gray-200 bg-white"
+                    >
                       <header className="flex items-center justify-between p-4">
                         <span className="text-sm text-gray-700">
                           {selectedLocations.length} Selected
@@ -154,7 +171,10 @@ const Properties = ({ initialData }) => {
                   SortBy
                 </label>
 
-                <select id="SortBy" className="h-10 rounded border-gray-300 text-sm">
+                <select
+                  id="SortBy"
+                  className="h-10 rounded border-gray-300 text-sm"
+                >
                   <option>Sort By</option>
                   <option value="Title, DESC">Title, DESC</option>
                   <option value="Title, ASC">Title, ASC</option>
@@ -167,11 +187,18 @@ const Properties = ({ initialData }) => {
         )}
 
         <ul className="mt-4 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {filteredData.map((property, index) => (
-            <li key={index}>
-              <Property data={property} />
-            </li>
-          ))}
+          {filteredData
+            .slice() // orijinal array’i bozmamak için kopya
+            .sort(
+              (a, b) =>
+                new Date(b.attributes.publishedAt) -
+                new Date(a.attributes.publishedAt)
+            )
+            .map((property, index) => (
+              <li key={index}>
+                <Property data={property} />
+              </li>
+            ))}
         </ul>
       </div>
     </section>
